@@ -135,6 +135,6 @@
      * add되지 않은(unstage 된 파일)을 commit하고 싶은데 매번 add 명령어를 실행시키가 귀찮다면 사용(-a)
    * -am
      * 두 옵션을 섞어서 사용할 수 있다.
-     * 'git commit -am 'commit 메세지''
+     * `git commit -am 'commit 메세지'`
    
    
