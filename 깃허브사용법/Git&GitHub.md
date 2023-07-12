@@ -31,11 +31,11 @@
   * git이 설치가 되었는지 안 되었는지 확인하는 방법
     * cmd에서 git --version치기
   * git이 설치가 되지 않았으면
-    1. 구글 git 검색
-    2. download for windows
-    3. click here to download
-    4. 설치 파일을 실행
-    5. 기본설정유지한 채로 Next 
+1. 구글 git 검색
+2. download for windows
+3. click here to download
+4. 설치 파일을 실행
+5. 기본설정유지한 채로 Next 
        
 
 ## Git 시작
