@@ -30,6 +30,8 @@
 ## Git 설치
   * git이 설치가 되었는지 안 되었는지 확인하는 방법
     * cmd에서 git --version치기
+    * ![cmd에서 git 설치 확인](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/2ee2c402-de69-4dc9-9e5b-6c6294a045c9)
+    * 나는 설치가 되어 있고 만약에 설치가 되지 않았으면 unknown option: git --version이라고 나올거다.
   * git이 설치가 되지 않았으면
 1. 구글 git 검색
 2. download for windows
