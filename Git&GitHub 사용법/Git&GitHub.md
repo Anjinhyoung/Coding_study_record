@@ -14,11 +14,13 @@
 # 1. Git의 소개
 ## 버전
   * 프로그램이나 파일이 수정된 사항이 있으면 버전이 업데이트 되었다.
+  * ex) 1.1ver, 1.2ver, 1.3ver 1.x는 보통 서브 버전이라 말하고 자잘한 부분들을 수정한 거라 생각하면 된다.
+  * ex) 1.1 -> 2.1  이런 식으로 x.1 '.'앞에 숫자가 바뀌었으면 대대적으로 수정한 거라 생각하면 된다.
 
 ## 버전관리시스템
-* git의 수많은 버전을 쉽게 관리하도록 도와주는 도구
+* git:수많은 버전을 쉽게 관리하도록 도와주는 도구
 
-## Git
+## Git의 특징
 1. 분산형 버전관리 시스템
    * 원격저장소(github)와 로컬저장소(개인컴퓨터)(저장소를 '래퍼지토리'라 할 수 있음)
    * 인터넷 연결이 없더라도 작업을 할 수 있다.
@@ -27,15 +29,14 @@
 3. 파일들의 수정, 삭제, 추가 등에 대한 모든 변경사항이 기록된다.
 4. 오픈소스를 보며 코드의 지식을 넓힐 수 있다.
 
-## Git 설치
+## Git 설치(window 기준)
   * git이 설치가 되었는지 안 되었는지 확인하는 방법
-    * cmd에서 git --version치기
-    * ![cmd에서 git 설치 확인](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/2ee2c402-de69-4dc9-9e5b-6c6294a045c9)
-    * 나는 설치가 되어 있고 만약에 설치가 되지 않았으면 unknown option: git --version이라고 나올거다.
+    * cmd(명령 프롬프트)에서 git --version치기
+    * 설치가 되지 않았으면 unknown option: git --version이라고 나올거다.
   * git이 설치가 되지 않았으면
-1. 구글 git 검색
-2. download for windows
-3. click here to download
+1. [Git홈페이지에 들어가기](https://git-scm.com/)
+2. 홈페이지 첫 화면 오른쪽에 download for windows 클릭
+3. 맨 위에 click here to download
 4. 설치 파일을 실행
 5. 기본설정유지한 채로 Next 
        
