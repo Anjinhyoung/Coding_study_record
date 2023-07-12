@@ -36,7 +36,7 @@
   * git이 설치가 되지 않았으면
 1. [Git홈페이지에 들어가기](https://git-scm.com/)
 2. 홈페이지 첫 화면 오른쪽에 download for windows 클릭
-3. 맨 위에 click here to download
+3. 맨 위 Download for Windows 아래 click here to download 클릭
 4. 설치 파일을 실행
 5. 기본설정유지한 채로 Next 
        
