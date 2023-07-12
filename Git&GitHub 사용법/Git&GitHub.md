@@ -57,11 +57,27 @@
       * 파일에 들어가서 맨 위 '보기' -> '파일 확장자'
 
 # GUI(GraphicU User Interface)
-  * 사용자가 편히 사용할 수 있도록 버튼이나 아이콘이나 같은 그래픽 기반의 사용환경
+  * 사용자가 편히 사용할 수 있도록 버튼이나 아이콘이나 같은 그래픽 기반의 사용환경(마우스 오른쪽 버튼 -> git gui here)
 
 # CLI(command Line Interface)
-  * 명령어 기반 사용환경
+  * 명령어 기반 사용환경(마우스 오른쪽 버튼 -> git bash here)
 
 # Sourcetree
   * git을 쉽게 사용할 수 있도록 도와주는 외부 gui tool
+  * 설치하는 방법(window 기준)
+  1. [소스트리 홈페이지 들어가기](https://www.sourcetreeapp.com/)
+  2. 홈페이지 첫 화면에 dowload for window클릭해서 다운로드하기
+  3. 실행하면 맨 처음 화면에 오른쪽에 Bitbucket을 클릭해서 회원가입하기(회원가입을 해야 사용할 수 있다.)
 
+# Git의 공간 분리
+  * 동작과 이력을 효율적으로 처리하기 위해서 저장공간을 논리적으로 분리
+    1. 작업공간(working directory/working tree)
+    2. 임시저장공간(stage)
+    3. 실직적으로 저장되고 기록되는 공간(repository)
+# 작업 공간(working tree)
+   * 작업을 하는 공간
+   * 로컬저장소에 접근하여 파일을 생성, 수정 그리고 저장하는 공간
+   * 스테이지(stage) 영역과 맞닿아 있다.
+   * 작업 공간에 새롭게 만들어진 파일들은 최초 모두 untracked  상태이다.
+   * 따라서 해당 파일들을 수정 사항을 반영하고 싶다면 tracked 상태로 바꾸어 주어야 한다.
+     * `git add '파일명'`
