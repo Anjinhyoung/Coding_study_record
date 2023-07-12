@@ -121,20 +121,20 @@
      * stage 상태의 파일(modifed 혹은 untracked된 파일은 안 됨)들을 영구적으로 저장
      * commit(영구저장) 메시지를 남겨야 한다.(권장사항)
      * `git commmit`
-   * vi editor(커밋 메세지 입력 편집기)
+   * vi editor(commit 메세지 입력 편집기)
      * #은 주석(해석하지 않음)
      * esc i --> 내용 삽입
      * esc:
-          * wq 엔터 --> 해당 커밋 메세지가 적용된다.
+          * wq 엔터 --> 해당 commit 메세지가 적용된다.
    * commit 단축옵션(-m)
-     * `git commit -m '커밋 메세지'`
-     * vi 에디터를 열지 않고도 간단하게 작은 따움표나 쌍따움표 안쪽 내용을 커밋 메세지로 작성할 수 있도록 도와주는 옵션
+     * `git commit -m 'commit 메세지'`
+     * vi 에디터를 열지 않고도 간단하게 작은 따움표나 쌍따움표 안쪽 내용을 commit 메세지로 작성할 수 있도록 도와주는 옵션
    * 커밋 단축옵션(-a)
-     * tracked 되어 moified 된 파일에만 적용할 수가 있다.
+     * tracked 되어 modified 된 파일에만 적용할 수가 있다.
      * `git commit -a`
-     * add되지 않은(unstage 된 파일)을 커밋하고 싶은데 매번 add 명령어를 실행시키가 귀찮다면 사용(-a)
+     * add되지 않은(unstage 된 파일)을 commit하고 싶은데 매번 add 명령어를 실행시키가 귀찮다면 사용(-a)
    * -am
      * 두 옵션을 섞어서 사용할 수 있다.
-     * 'git commit -am '커밋 메세지''
+     * 'git commit -am 'commit 메세지''
    
    
