@@ -4,7 +4,7 @@
 2. Git의 기본 개념
 3. Git과 Commit
 4. Git과 Server - 로컬 저장소와 원격 저장소
-5. Git과 Server 2 - 로컬 저장소와 원격 저장소
+5. Git과 Server2 - 로컬 저장소와 원격 저장소
 6. Git과 branch
 7. Git과 병합
 8. Git과 충돌
@@ -56,28 +56,55 @@
   * 파일 확장하는 법
       * 파일에 들어가서 맨 위 '보기' -> '파일 확장자'
 
-# GUI(GraphicU User Interface)
+## GUI(GraphicU User Interface)
   * 사용자가 편히 사용할 수 있도록 버튼이나 아이콘이나 같은 그래픽 기반의 사용환경(마우스 오른쪽 버튼 -> git gui here)
 
-# CLI(command Line Interface)
+## CLI(command Line Interface)
   * 명령어 기반 사용환경(마우스 오른쪽 버튼 -> git bash here)
 
-# Sourcetree
+## Sourcetree
   * git을 쉽게 사용할 수 있도록 도와주는 외부 gui tool
   * 설치하는 방법(window 기준)
-  1. [소스트리 홈페이지 들어가기](https://www.sourcetreeapp.com/)
-  2. 홈페이지 첫 화면에 dowload for window클릭해서 다운로드하기
-  3. 실행하면 맨 처음 화면에 오른쪽에 Bitbucket을 클릭해서 회원가입하기(회원가입을 해야 사용할 수 있다.)
+    1. [소스트리 홈페이지 들어가기](https://www.sourcetreeapp.com/)
+    2. 홈페이지 첫 화면에 dowload for window클릭해서 다운로드하기
+    3. 실행하면 맨 처음 화면에 오른쪽에 Bitbucket을 클릭해서 회원가입하기(회원가입을 해야 사용할 수 있다.)
 
-# Git의 공간 분리
-  * 동작과 이력을 효율적으로 처리하기 위해서 저장공간을 논리적으로 분리
+## Git의 공간 분리
+  * 동작과 이력을 효율적으로 처리하기 위해서 저장공간을 논리적으로 분리(3가지 종류가 있다.)
     1. 작업공간(working directory/working tree)
     2. 임시저장공간(stage)
     3. 실직적으로 저장되고 기록되는 공간(repository)
-# 작업 공간(working tree)
+    4. 
+## 작업 공간(working tree)
    * 작업을 하는 공간
    * 로컬저장소에 접근하여 파일을 생성, 수정 그리고 저장하는 공간
    * 스테이지(stage) 영역과 맞닿아 있다.
    * 작업 공간에 새롭게 만들어진 파일들은 최초 모두 untracked  상태이다.
    * 따라서 해당 파일들을 수정 사항을 반영하고 싶다면 tracked 상태로 바꾸어 주어야 한다.
      * `git add '파일명'`
+   * 해당 명령어를 실행하면 해당 파일이  tracked  상태로 변경
+     
+## 깃 명령어(CLI)
+   * git으로 시작한다.
+   * 설치 명령어
+      * `git init`
+   * track 상태로 바꾸기
+      * `git add '파일명'`
+   * 상태 확인 명령어
+      * `git status`
+    
+## 임시저장공간(stage)
+   * tracked 된 파일들을 관리하는 영역
+   * 작업 공간과 연결되어있다.
+   * tracked 된 파일들의 추적상태를 잠시 복사하여 저장한다.
+   * stage 영역에 저장된 파일들은 모두 tracked 상태가 된다. stage에 등록이 된다.
+   * 최종적인 파일의 변화를 영구적으로 저장하기 위해서는 모든 파일의 상태가 stage 상태가 되어야 한다.
+   * unstage 상태는 스테이지 영역에 있는 파일과 working directory 안의 파일이 서로 차이가 있을 때를 의마한다.
+   * stage에 올라가지 않은, 작업공간에 새롭게 만들어진 파일(untracked 파일)도 unstage 상태라고 할 수 있다.
+   * 원본과 수정본의 기록을 구분하기 위해 modified unmodified로 나누어 관리
+   * working directory
+     * tracked
+       * `파일1(수정 사항 없음) -> unmodified 상태 -> stage 상태`
+       * `파일2(수정 사항 있음) -> modified 상태 -> unstage 상태`
+     * untracked
+       * `파일3(stage에 추가하지 않은 상태) -> unstage 상태` 
