@@ -53,13 +53,14 @@
 
 ## 파일 확장자
   * 해당 파일이 어떤 파일인지 알려주는 역할
-  * 파일마다 정해져 있다.(.txt, .pptx, .xlsx...)
-  * 보기 -> 파일확장자 체크
+  * 파일마다 정해져 있다.(.txt(메모장), .pptx(ppt), .xlsx(엑셀), ...)
+  * 파일 확장하는 법
+      * 파일에 들어가서 맨 위 '보기' -> '파일 확장자'
 
 # GUI(GraphicU User Interface)
   * 사용자가 편히 사용할 수 있도록 버튼이나 아이콘이나 같은 그래픽 기반의 사용환경
 
-# CLI(command line interface)
+# CLI(command Line Interface)
   * 명령어 기반 사용환경
 
 # Sourcetree
