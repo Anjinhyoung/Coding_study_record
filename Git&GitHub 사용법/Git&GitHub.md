@@ -15,15 +15,20 @@
    * [작업 공간](#작업-공간)
    * [깃 명령어](#깃-명령어)
    * [임시저장공간](#임시저장공간)
-5. [Git과 Commit](#git과-commit)
+3. [Git과 Commit](#git과-commit)
    * [작업 공간 - stage - repository](#작업-공간-stage-repository)
-7. [Git과 Server-로컬 저장소와 원격 저장소](#git과-server-로컬-저장소와-원격-저장소)
-8. [Git과 Server2-로컬 저장소와 원격 저장소](#git과-server2-로컬-저장소와-원격-저장소)
-9. [Git과 branch](#git과-branch)
-10. Git과 병합
-11. Git과 충돌
-12. Git과 Reset, Revert
-13. Git 배포 관리와 태그
+4. [Git과 Server-로컬 저장소와 원격 저장소](#git과-server-로컬-저장소와-원격-저장소)
+   * [GitHub와 로컬 저장소 연결](#gitHub와-로컬-저장소-연결)
+5. [Git과 Server2-로컬 저장소와 원격 저장소](#git과-server2-로컬-저장소와-원격-저장소)
+6. [Git과 branch](#git과-branch)
+    * [브랜치 정보](#브랜치-정보)
+    * [Take a picture](#take-a-picture)
+    * [GitHub 브랜치](#github-브랜치)
+    * [GitHub 브랜치 만들기](#github-브랜치-만들기)
+8. Git과 병합
+9. Git과 충돌
+10. Git과 Reset, Revert
+11. Git 배포 관리와 태그
 
 # Git의 소개
 ## 버전
@@ -160,7 +165,7 @@
  |Git|GitHub|
  |---|---|
  |로컬 저장소|원격 저장소|
- ## GitHub(원격저장소)와 로컬 저장소 연결
+ ## GitHub와 로컬 저장소 연결
    1. 원격저장소 만들기
       * GitHub 로그인 > repositoty 만들기
    2. 내가 만든 원격 저장소와 로컬 저장소 연결
