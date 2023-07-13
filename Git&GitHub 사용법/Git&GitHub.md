@@ -1,7 +1,7 @@
 # 목차 
 
 1. [Git의 소개](#1.Git의소개)
-2. Git의 기본 개념
+2. [Git의 기본 개념](#2.Git의기본개념)
 3. Git과 Commit
 4. Git과 Server - 로컬 저장소와 원격 저장소
 5. Git과 Server2 - 로컬 저장소와 원격 저장소
