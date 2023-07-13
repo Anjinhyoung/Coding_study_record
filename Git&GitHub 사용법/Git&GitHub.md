@@ -4,7 +4,7 @@
    * [버전](#버전)
    * [버전관리시스템](#버전관리시스템)
    * [Git의 특징](#git의-특징)
-   * [Git 설치(window기준)](#git-설치(window기준))
+   * [Git 설치(window기준)](#git-설치-window기준)
 3. [Git의 기본 개념](#git의-기본-개념)
 4. [Git과 Commit](#git과-commit)
 5. [Git과 Server-로컬 저장소와 원격 저장소](#git과-server-로컬-저장소와-원격-저장소)
