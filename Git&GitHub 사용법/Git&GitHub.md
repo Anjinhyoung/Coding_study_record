@@ -141,7 +141,26 @@
  |Git|GitHub|
  |---|---|
  |로컬 저장소|원격 저장소|
-
+ ## GitHub(원격저장소)와 로컬 저장소 연결
+   1. 원격저장소 만들기
+      * GitHub 로그인 > repositoty 만들기
+   2. 내가 만든 원격 저장소와 로컬 저장소 연결
+      1. `git branch - M main`
+          * branch를 main으로 변경
+      2. `git remote add origin(별칭) 원격저장소주소(Github주소)`
+          * git 로컬 저장소와 연결된 원격 저장소를 설정
+          * 원격 저장소가 주소가 너무 기니깐 origin(별칭)이라고 부름
+          * 그래서 origin말고 ex) hi, abc 등등 지어도 상관 없음
+   * `git remote`
+       * 해당 레포지토리와 연결된 원격저장소를 알려줘
+       * origin(별칭)이라고 뜨면 잘 연결됨
+   * `git push origin(별칭) branch 이름`
+       * 맨 처음 git push origin(별칭) main을 입력하면 깃허브 로그인하라고 창이 업로드 됨
+       * (로그인 하면 된다. 확인 절차라 생각하면 된다.)
+       * `git push origin main`
+          * origin이라는 별칭을 가진 원격저장소의 main이라는 branch에다 업로드 하겠다.
+   * `git push -u 별칭 branch 이름`
+       * 해당 옵션을 사용하면 별칭과 브랜치 이름은 생략 가능하다.
 
  
 
