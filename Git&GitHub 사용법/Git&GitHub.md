@@ -4,7 +4,7 @@
 2. [Git의 기본 개념](#git의-기본-개념)
 3. [Git과 Commit](#git과-commit)
 4. [Git과 Server-로컬 저장소와 원격 저장소](#git과-server-로컬-저장소와-원격-저장소)
-5. [Git과 Server2-로컬 저장소와 원격 저장소](#git과-server2)
+5. [Git과 Server2-로컬 저장소와 원격 저장소](#git과-server2-로컬-저장소와-원격-저장소)
 6. Git과 branch
 7. Git과 병합
 8. Git과 충돌
@@ -162,7 +162,7 @@
    * `git push -u 별칭 branch 이름`
        * 해당 옵션을 사용하면 별칭과 브랜치 이름은 생략 가능하다.
     
-   # Git과 Server2 - 로컬 저장소와 원격 저장소
+   # Git과 Server2-로컬 저장소와 원격 저장소
    * `git remote add 원격저장소 별칭(origin) 원격 저장소 주소(GitHub 주소)`
       * 해당 주소의 원격 저장소를 별칭으로 추가(연결)
    *  `git remote`
