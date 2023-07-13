@@ -16,7 +16,7 @@
    * [깃 명령어](#깃-명령어)
    * [임시저장공간](#임시저장공간)
 5. [Git과 Commit](#git과-commit)
-   * [작업 공간 - stage - repository](#ㅡ-stage-ㅡ-repository)
+   * [작업 공간 - stage - repository](#-ㅡ-stage-ㅡ-repository)
 7. [Git과 Server-로컬 저장소와 원격 저장소](#git과-server-로컬-저장소와-원격-저장소)
 8. [Git과 Server2-로컬 저장소와 원격 저장소](#git과-server2-로컬-저장소와-원격-저장소)
 9. [Git과 branch](#git과-branch)
