@@ -129,7 +129,7 @@
        * `파일3(stage에 추가하지 않은 상태) -> unstage 상태`
 
  # Git과 Commit
- ## 작업 공간 stage repository
+ ## 작업 공간 Stage Repository
    * stage 올리기(untracked파일 혹인 modified된 파일)
      * `git add '파일명'`
      * `모든 파일을 stag에 올리고 싶다면 파일명 자리에 *을 사용한다.`
