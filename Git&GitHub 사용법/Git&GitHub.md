@@ -89,7 +89,7 @@
     1. 작업공간(working directory/working tree)
     2. 임시저장공간(stage)
     3. 실직적으로 저장되고 기록되는 공간(repository)
-    4. 
+    
 ## 작업 공간
    * working tree
    * 작업을 하는 공간
