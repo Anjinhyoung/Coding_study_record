@@ -7,8 +7,8 @@
    * [Git 설치](#git-설치)
    * [Git 시작](#git-시작)
 2. [Git의 기본 개념](#git의-기본-개념)
-     *[파일 확장자](#파일-확장자)
-     *[GUI(GraphicU User Interface)](#gui(graphic-user-interface))
+   * [파일 확장자](#파일-확장자)
+   * GUI(GraphicU User Interface)(#gui(graphic-user-interface))
 5. [Git과 Commit](#git과-commit)
 6. [Git과 Server-로컬 저장소와 원격 저장소](#git과-server-로컬-저장소와-원격-저장소)
 7. [Git과 Server2-로컬 저장소와 원격 저장소](#git과-server2-로컬-저장소와-원격-저장소)
@@ -63,7 +63,7 @@
   * 파일 확장하는 법
       * 파일에 들어가서 맨 위 '보기' -> '파일 확장자'
 
-## GUI(GraphicU User Interface)
+## GUI(Graphic User Interface)
   * 사용자가 편히 사용할 수 있도록 버튼이나 아이콘이나 같은 그래픽 기반의 사용환경(마우스 오른쪽 버튼 -> git gui here)
 
 ## CLI(command Line Interface)
