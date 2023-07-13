@@ -191,16 +191,42 @@
 # Git과 branch
 ## 브랜치 정보
    * branch(브랜치)
-      * 나뭇가지, 분기점
-      * 원본을 기반으로 분리하여 작업할 수 있도록 도와준다.
-      * 항상 안정된 코드를 유지함과 더불어 실험적인 작업을 시도할 수 있다.
-      * 일종의 가상 폴더
-    * master 브랜치
-      * git에서 기본적으로 만들어진 브랜치
-    * head 포인터
-      * 가장 마지막에 커밋된 상태를 가리키는 지시자(저장공간)
-      * 새롭게 커밋이 되거나 수정, 변경이 될 때 head가 알고 있는 커밋을 보고 비교하면 속도가 빠르기 때문이다.
- 
+       * 나뭇가지, 분기점
+       * 원본을 기반으로 분리하여 작업할 수 있도록 도와준다.
+       * 항상 안정된 코드를 유지함과 더불어 실험적인 작업을 시도할 수 있다.
+       * 일종의 가상 폴더
+   * master branch
+       * git에서 기본적으로 만들어진 브랜치
+   * head (pointer)
+       * 가장 마지막에 커밋된 상태를 가리키는 지시자(저장공간)
+       * 새롭게 커밋이 되거나 수정, 변경이 될 때 head가 알고 있는 커밋을 보고 비교하면 속도가 빠르기 때문이다.
+
+   ### Take a picture
+   1. ![git init](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/8cebd64f-2c0d-4a32-ab88-5a13e0410a7e)
+       - 맨처음 git init을 설치하면 'master'브랜치가 생성이 된다.
+   2. ![master 브랜치](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/8aa3431d-24bd-4e7f-87e1-c7cf264e17de)
+       - 이런 식으로 생각하면 된다.
+       - 이제 Master 브랜치에다가 test1 파일을 만들어 보자.
+   3. ![test1파일 생성](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/593902aa-fd4b-43b4-b73e-10bf86f3b47d)
+   4. ![test1 파일 생성2](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/677c4a4a-aa82-40c2-be9c-57657cc12bfb)
+       - 이런 식으로 생각하면 된다.
+       - 이제 master 브랜치에다가 'abc' 브랜치를 만들어 보자.
+   5. ![abc 브랜치 생성](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/a25728cb-6da0-44c5-bc1d-d0af633c082f)
+       - 이런 식으로 생각하면 된다.
+       - 이제 abc브랜치에다가 test2 파일을 만들어 보자.
+   6. ![test2 파일 생성](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/bca50063-1a20-46e7-b5f5-5c39653e8288)
+   7. ![test2파일 생성2](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/98f3c3e0-d29a-4201-876c-bd2c37803b6a)
+       - 이런 식으로 생각하면 된다.
+       - 이제 master 브랜치를 보면
+   8. ![master 브랜치 상황](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/6276e040-c6c7-434a-a0ae-2ba2f76d94f5)
+       - test2 파일 없다. test2는 abc브랜치에다가 만들었으니깐 master 브랜치에는 test2 파일이 안 보인다.
+
+
+
+
+
+
+
 
    
    
