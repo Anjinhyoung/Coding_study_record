@@ -6,7 +6,7 @@
    * [Git의 특징](#git의-특징)
    * [Git 설치](#git-설치)
    * [Git 시작](#git-시작)
-3. [Git의 기본 개념](#git의-기본-개념)
+2. [Git의 기본 개념](#git의-기본-개념)
    *[파일 확장자](#파일-확장자)
    *[GUI(GraphicU User Interface)](#gui(graphic-user-interface))
 5. [Git과 Commit](#git과-commit)
