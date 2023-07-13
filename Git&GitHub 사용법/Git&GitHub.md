@@ -207,19 +207,46 @@
    2. ![master 브랜치](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/8aa3431d-24bd-4e7f-87e1-c7cf264e17de)
        - 이런 식으로 생각하면 된다.
        - 이제 Master 브랜치에다가 test1 파일을 만들어 보자.
+       * git 로컬 브랜치 만들기
    3. ![test1파일 생성](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/593902aa-fd4b-43b4-b73e-10bf86f3b47d)
    4. ![test1 파일 생성2](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/677c4a4a-aa82-40c2-be9c-57657cc12bfb)
        - 이런 식으로 생각하면 된다.
        - 이제 master 브랜치에다가 'abc' 브랜치를 만들어 보자.
+           * `git branch 브랜치 이름 (커밋ID)`
+           * 커밋ID를 생략하면 마지막 커밋(head)를 기점으로 새로운 브랜치가 생성
+           * 브랜치 이름은 -. 으로는 시작할 수 없고 띄어쓰기 ~^?* 특수문자는 불가능 이미 존재하는 브랜치 이름도 불가능
+           * git -flow기법을 참고하여 브랜치 이름을 짓는 것도 좋다. (구글에 git -flow 검색)
    5. ![abc 브랜치 생성](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/a25728cb-6da0-44c5-bc1d-d0af633c082f)
        - 이런 식으로 생각하면 된다.
        - 이제 abc브랜치에다가 test2 파일을 만들어 보자.
+           * 브랜치 이동
+           * `git checkout 이동할 브랜치`
+           * `git checkout -`
+           * 이전 브랜치로 이동한다 '-'는 리눅스에서 '이전'이라는 명령어를 갖고 있다.
+           * commit이 완료되지 않으면 (stage에 남아있다.) 다른 브랜치로 이동 불가
+           * `git checkout -b 브랜치명`
+           * 브랜치 생성과 이동을 동시에
    6. ![test2 파일 생성](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/bca50063-1a20-46e7-b5f5-5c39653e8288)
    7. ![test2파일 생성2](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/98f3c3e0-d29a-4201-876c-bd2c37803b6a)
        - 이런 식으로 생각하면 된다.
        - 이제 master 브랜치를 보면
    8. ![master 브랜치 상황](https://github.com/Anjinhyoung/TIL-Today-I-Learned-/assets/117788976/6276e040-c6c7-434a-a0ae-2ba2f76d94f5)
        - test2 파일 없다. test2는 abc브랜치에다가 만들었으니깐 master 브랜치에는 test2 파일이 안 보인다.
+ ## GitHub 브랜치
+   * github의 기본 브랜치 이름은 main이다.
+   * 따라서 보통은 깃허브에 연결할 때 git의 기본 브랜치인 master를 main으로 수정하여 사용한다.
+   * git branch -M main 이런 식으로 수정
+   * 현재 위치한 브랜치가 main을 수정
+
+ ## GitHub 브랜치 만들기
+   *  `git push -u 원격 저장소 별칭 브랜치 이름`
+   *  원격 저장소로 로컬 branch 전송하기
+   *  `git remote show 원격저장소 별칭`
+   *  원격저장소 브랜치와 로컬브랜치 정보 확인
+   *  `git push origin 브랜치이름:원격 저장소 브랜치 이름`
+   *  로컬 브랜치와 원격 저장소 브랜치가 서로 같다면 push할 때 혹은 pull할 때 생략할 수 있다.
+   *  하지만 이름이 다르면 git push 원격 저장소 별칭 원격 저장소 브랜치명으로 생략하지 못하고 사용한다.
+   
 
 
 
