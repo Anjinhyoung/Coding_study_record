@@ -1,17 +1,17 @@
 # 목차 
 
-1. [Git의 소개](#1.git-의소개)
+1. [Git의 소개](#git-의소개)
 2. [Git의 기본 개념](#git의-기본-개념)
-3. Git과 Commit
-4. Git과 Server - 로컬 저장소와 원격 저장소
-5. Git과 Server2 - 로컬 저장소와 원격 저장소
+3. Git과 Commit(#git과-commit)
+4. Git과 Server - 로컬 저장소와 원격 저장소(#git과-server)
+5. Git과 Server2 - 로컬 저장소와 원격 저장소(#git과-serve2)
 6. Git과 branch
 7. Git과 병합
 8. Git과 충돌
 9. Git과 Reset, Revert
 10. Git 배포 관리와 태그
 
-# 1. Git의 소개
+# Git의 소개
 ## 버전
   * 프로그램이나 파일이 수정된 사항이 있으면 버전이 업데이트 되었다.
   * ex) 1.1ver, 1.2ver, 1.3ver 1.x는 보통 서브 버전이라 말하고 자잘한 부분들을 수정한 거라 생각하면 된다.
@@ -109,7 +109,7 @@
      * untracked
        * `파일3(stage에 추가하지 않은 상태) -> unstage 상태`
 
- # 3. Git과 Commit
+ # Git과 Commit
  ## 작업 공간 <--->  stage <---> repository
    * stage 올리기(untracked파일 혹인 modified된 파일)
      * `git add '파일명'`
@@ -137,7 +137,7 @@
      * 두 옵션을 섞어서 사용할 수 있다.
      * `git commit -am 'commit 메세지'`
      * 
- # 4. Git과 Server - 로컬 저장소와 원격 저장소
+ # Git과 Server - 로컬 저장소와 원격 저장소
  |Git|GitHub|
  |---|---|
  |로컬 저장소|원격 저장소|
@@ -162,7 +162,7 @@
    * `git push -u 별칭 branch 이름`
        * 해당 옵션을 사용하면 별칭과 브랜치 이름은 생략 가능하다.
     
-   # 5. Git과 Server2 - 로컬 저장소와 원격 저장소
+   # Git과 Server2 - 로컬 저장소와 원격 저장소
    * `git remote add 원격저장소 별칭(origin) 원격 저장소 주소(GitHub 주소)`
       * 해당 주소의 원격 저장소를 별칭으로 추가(연결)
    *  `git remote`
