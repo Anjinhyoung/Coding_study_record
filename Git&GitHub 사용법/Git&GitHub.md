@@ -5,7 +5,7 @@
 3. [Git과 Commit](#git과-commit)
 4. [Git과 Server-로컬 저장소와 원격 저장소](#git과-server-로컬-저장소와-원격-저장소)
 5. [Git과 Server2-로컬 저장소와 원격 저장소](#git과-server2-로컬-저장소와-원격-저장소)
-6. Git과 branch
+6. [Git과 branch](#git과-branch)
 7. Git과 병합
 8. Git과 충돌
 9. Git과 Reset, Revert
@@ -188,7 +188,7 @@
       * 만약에 'fetch'를 사용해서 다운 받고 싶으면 `git merge origin(별칭)/main(브랜치 이름)`
    * `git remote rm 원격 저장소 별칭`
       * 원격 저장소의 별칭 삭제
-
+# Git과 branch
  
 
    
