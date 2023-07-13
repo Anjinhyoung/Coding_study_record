@@ -16,13 +16,14 @@
    * [깃 명령어](#깃-명령어)
    * [임시저장공간](#임시저장공간)
 5. [Git과 Commit](#git과-commit)
-6. [Git과 Server-로컬 저장소와 원격 저장소](#git과-server-로컬-저장소와-원격-저장소)
-7. [Git과 Server2-로컬 저장소와 원격 저장소](#git과-server2-로컬-저장소와-원격-저장소)
-8. [Git과 branch](#git과-branch)
-9. Git과 병합
-10. Git과 충돌
-11. Git과 Reset, Revert
-12. Git 배포 관리와 태그
+   * [작업 공간 - stage - repository](#작업 공간---stage---repository)
+7. [Git과 Server-로컬 저장소와 원격 저장소](#git과-server-로컬-저장소와-원격-저장소)
+8. [Git과 Server2-로컬 저장소와 원격 저장소](#git과-server2-로컬-저장소와-원격-저장소)
+9. [Git과 branch](#git과-branch)
+10. Git과 병합
+11. Git과 충돌
+12. Git과 Reset, Revert
+13. Git 배포 관리와 태그
 
 # Git의 소개
 ## 버전
@@ -111,7 +112,7 @@
       * `git status`
     
 ## 임시저장공간
-   * stage
+   * stage 상태
    * tracked 된 파일들을 관리하는 영역
    * 작업 공간과 연결되어있다.
    * tracked 된 파일들의 추적상태를 잠시 복사하여 저장한다.
@@ -128,7 +129,7 @@
        * `파일3(stage에 추가하지 않은 상태) -> unstage 상태`
 
  # Git과 Commit
- ## 작업 공간 <--->  stage <---> repository
+ ## 작업 공간 - stage - repository
    * stage 올리기(untracked파일 혹인 modified된 파일)
      * `git add '파일명'`
      * `모든 파일을 stag에 올리고 싶다면 파일명 자리에 *을 사용한다.`
