@@ -11,6 +11,8 @@
    * [GUI](#gui)
    * [CLI](#cli)
    * [Sourcetree](#sourcetree)
+   * [Git의 공간 분리](#git의-공간-분리)
+   * [작업 공간](#작업-공간)
 5. [Git과 Commit](#git과-commit)
 6. [Git과 Server-로컬 저장소와 원격 저장소](#git과-server-로컬-저장소와-원격-저장소)
 7. [Git과 Server2-로컬 저장소와 원격 저장소](#git과-server2-로컬-저장소와-원격-저장소)
@@ -86,7 +88,8 @@
     2. 임시저장공간(stage)
     3. 실직적으로 저장되고 기록되는 공간(repository)
     4. 
-## 작업 공간(working tree)
+## 작업 공간
+   * working tree
    * 작업을 하는 공간
    * 로컬저장소에 접근하여 파일을 생성, 수정 그리고 저장하는 공간
    * 스테이지(stage) 영역과 맞닿아 있다.
