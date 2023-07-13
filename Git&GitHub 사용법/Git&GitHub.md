@@ -109,7 +109,7 @@
      * untracked
        * `파일3(stage에 추가하지 않은 상태) -> unstage 상태`
 
- # Git과 Commit
+ # 3. Git과 Commit
  ## 작업 공간 <--->  stage <---> repository
    * stage 올리기(untracked파일 혹인 modified된 파일)
      * `git add '파일명'`
@@ -136,5 +136,14 @@
    * -am
      * 두 옵션을 섞어서 사용할 수 있다.
      * `git commit -am 'commit 메세지'`
+     * 
+ # 4. Git과 Server - 로컬 저장소와 원격 저장소
+ |Git|GitHub|
+ |---|---|
+ |로컬 저장소|원격 저장소|
+
+
+ 
+
    
    
