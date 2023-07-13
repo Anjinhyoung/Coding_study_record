@@ -5,15 +5,18 @@
    * [버전관리시스템](#버전관리시스템)
    * [Git의 특징](#git의-특징)
    * [Git 설치](#git-설치)
+   * [Git 시작](#git-시작)
 3. [Git의 기본 개념](#git의-기본-개념)
-4. [Git과 Commit](#git과-commit)
-5. [Git과 Server-로컬 저장소와 원격 저장소](#git과-server-로컬-저장소와-원격-저장소)
-6. [Git과 Server2-로컬 저장소와 원격 저장소](#git과-server2-로컬-저장소와-원격-저장소)
-7. [Git과 branch](#git과-branch)
-8. Git과 병합
-9. Git과 충돌
-10. Git과 Reset, Revert
-11. Git 배포 관리와 태그
+   *[파일 확장자](#파일-확장자)
+   *[GUI(GraphicU User Interface)](#gui(graphic user interface))
+5. [Git과 Commit](#git과-commit)
+6. [Git과 Server-로컬 저장소와 원격 저장소](#git과-server-로컬-저장소와-원격-저장소)
+7. [Git과 Server2-로컬 저장소와 원격 저장소](#git과-server2-로컬-저장소와-원격-저장소)
+8. [Git과 branch](#git과-branch)
+9. Git과 병합
+10. Git과 충돌
+11. Git과 Reset, Revert
+12. Git 배포 관리와 태그
 
 # Git의 소개
 ## 버전
