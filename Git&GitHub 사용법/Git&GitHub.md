@@ -4,7 +4,7 @@
 2. [Git의 기본 개념](#git의-기본-개념)
 3. [Git과 Commit](#git과-commit)
 4. [Git과 Server - 로컬 저장소와 원격 저장소](#git과-server)
-5. [Git과 Server2 - 로컬 저장소와 원격 저장소](#git과-serve2)
+5. [Git과 Server2 - 로컬 저장소와 원격 저장소](#git과-server2)
 6. Git과 branch
 7. Git과 병합
 8. Git과 충돌
