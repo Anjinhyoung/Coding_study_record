@@ -195,3 +195,25 @@
   * 문법 에러가 발생
   * 왜냐하면 함수를 이렇게 만들어버리면 personal_info('홍길동', 30)으로 함수를 호출했을 때 30이 어디로 들어가야 할지 알 수가 없기 때문
   * 즉, 초깃값이 지정된 매개변수는 뒤쪽에 몰아주면 됨
+
+# 재귀호출 사용하기
+  * 함수 안에서 함수 자기자신을 호출하는 방식을 재귀호출(recursive call)이라고 한다.
+    ### 재귀호출 사용하기
+    ```python
+    def hello():
+    print('Hello, world!')
+    hello()
+
+    hello() # hello() 함수를 호출
+    ```
+  * 출력 결과
+    ```
+    Hello, world!
+    Hello, world!
+    Hello, world!
+    ...(생략)
+    ```
+    * hello 함수 안에서 다시 hello 함수를 호출
+    * 왜냐하면 hello() 함수 안에 자기 자신인 'hello()'를 계속 호출 하고 있으니깐 무한 반복이 되는 거다.
+    ### Take a picture
+    * 
