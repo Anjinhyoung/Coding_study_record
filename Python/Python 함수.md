@@ -215,5 +215,19 @@
     ```
     * hello 함수 안에서 다시 hello 함수를 호출
     * 왜냐하면 hello() 함수 안에 자기 자신인 'hello()'를 계속 호출 하고 있으니깐 무한 반복이 되는 거다.
-    ### Take a picture
-    * 
+
+    ### 재귀호출에 종료 조건 만들기
+    ```python
+    def hello(count):
+    if count == 0:
+        return
+    print("Hello, World",count)
+
+    count -=1
+    hello(count)
+
+    hello(5)
+    ```
+    * hello 함수의 반복 횟수를 계산하기 위해 매개변수 count를 지정
+    * count가 0이면 hello 함수를 호출하지 않고 끝이 난다.
+    * 만약 0이 아니면 'Hello, world!'를 출력하고, count의 값을 1씩 감소시킨 뒤 hello 함수를 호출할 때 감소된 count의 값을 넣어줍니다.
