@@ -140,6 +140,7 @@
   지갑에 5000이 있습니다.
   ```
 # 클래스 속성 사용하기
+* 클래스 속성은 클래스에 속해 있으며 모든 인스턴스에서 공유함 
 * 클래스 속성은 다음과 같이 클래스에 바로 속성을 만듦
 * ```python
   def 클래스 이름:
@@ -150,7 +151,7 @@
   class Bag:
      bag = []
      def put_bag(self, stuff):
-        self.bag.append(stuff)
+        Bag.bag.append(stuff)   # 클래스 이름으로 클래스 속성에 접근
   
   a = Bag()
   a.put_bag("연필")
