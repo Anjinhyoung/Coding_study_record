@@ -123,6 +123,34 @@
   class 클래스 이름:
     def 메서드(self,매개변수):
         self.__속성 = 매개변수
+  ```
+* ```python
+  class Wallet:
+    def __init__(self,wallet):
+        self.__wallet = wallet # 변수 앞에 __를 붙여서 비공개 속성으로 만듦
+    def pay(self,amount):
+        self.__wallet -= amount # 비공개 속성은 클래스 안의 메서드에서만 접근할 수 있음
+        print(f"지갑에 {self.__wallet}이 있습니다.")
+
+   jin = Wallet(10000)
+   jin.pay(5000)
+  ```
+* 출력 결과
+* ```
+  지갑에 5000이 있습니다.
+  ```
+# 클래스 속성 사용하기
+* 클래스 속성은 다음과 같이 클래스에 바로 속성을 만듦
+* ```python
+  def 클래스 이름:
+     속성 = 값
+  ```
+* 예시
+* ```python
+  class Bag:
+     bag = []
+     def put_bag(self, stuff):
+        self.bag.append(stuff)
   
   a = Bag()
   a.put_bag("연필")
