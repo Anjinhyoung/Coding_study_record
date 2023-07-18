@@ -262,3 +262,22 @@
   ```
 * 예시
 * ```python
+  class Peson:
+     count = 0
+
+     def __init__(self):
+           Peson.count+=1 # 인스턴스가 만들어 질때 클래스 속성 count+=1을 더함
+
+     @classmethod
+     def print_count(cls):
+           print("{0}명이 생성되었습니다.".format(cls.count)) # cls로 클래스 속성에 접근
+
+   a=Peson()
+   b=Peson()
+
+   Peson.print_count()
+  ```
+* 출력 결과
+* ```
+  2명이 생성되었습니다.
+  ```
