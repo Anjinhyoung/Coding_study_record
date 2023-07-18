@@ -169,5 +169,96 @@
   ```
 * Bag 클래스에 bag 클래스 속성을 넣고 put_bag 메서드를 만듦
 * 인스턴스 두 개를 만든 뒤 각각 put_bag 메서드를 사용함
+##### 가방을 공유하고 싶지 않다면?
+* 가방을 여러 사람이 공유하지 않으려면 bag을 인스턴스 속성으로 만들면 됨
+* ```python
+  class Bag:
+    def __init__(self):
+        self.bag = []
+
+    def put_bag(self, stuff):
+        self.bag.append(stuff) 
+
+
+   a = Bag()
+   a.put_bag("연필")
+
+   b = Bag()
+   b.put_bag("지우개")
+
+   print(a.bag)
+   print(b.bag)
+  ```
+* 출력 결과
+* ```
+  ['연필']
+  ['지우개']
+  ```
 
 # 클래스 속성 vs 인스턴스 속성
+* 인스턴스 속성은 인스턴스별로 독립되어 있으며 서로 영향을 주지 않음
+* 클래스 속성: 모든 인스턴스가 공유 인스턴스 전체가 사용행 하는 값을 저장할 때 사용
+
+# 비공개 클래스 속성 사용하기
+* 클래스 안에서만 접근할 수 있고, 클래스 바깥에서는 접근할 수 없음
+* ```python
+  class 클래스 이름:
+    __속성 = 값 # 비공개 클래스 속성
+  ```
+* 예시
+* ```python
+  class Knight:
+    __item_lmit = 10 # 비공개 클래스 속성
+    def print_item_limit(self):
+        print(Knight.__item_lmit) # 클래스 안에서만 접근할 수 있음
+        
+        
+   x = Knight
+   x.print_item_limit() # 10
+
+   print(Knight.__item_lmit) # 클래스 바깥에서는 접근할 수 없음 실행하면 에러남
+  ```
+# 정적 메서드 사용하기
+* 정적 메서드는 다음과 같이 메서드 위에 @staticmethod를 붙임
+* 정적 메서드는 매개변수에 self를 지정하지 않음
+* ```python
+  class 클래스 이름:
+    @staticmethod
+    def 메서드(매개변수1, 매개변수2):
+        코드
+  ```
+* @staticmethod처럼 앞에 @이 붙은 것을 데코레이터라고 하며 메서드에 추가 기능을 구현할 때 사용함
+* 예시
+* ```python
+  class Calc:
+    @staticmethod
+    def add(a,b):
+        print(a+b)
+    @staticmethod
+    def mul(a,b):
+        print(a*b)
+        
+  Calc.add(10,20) # 클래스에서 바로 호출
+  Calc.mul(10,20) # 클래스에서 바로 호출
+  ```
+* 출력 결과
+* ```
+  30
+  200
+  ```
+* 정적 메서드는 self를 받지 않으므로 인스턴스 속성에는 접근할 수 없음
+* 정적 메서드는 인스턴스 속성, 인스턴스 메서드가 필요 없을 때 사용함
+* 정적 메서드는 메서드의 실행이 외부 상태에 영향을 끼치지 않는 순수 함수를 만들 때 사용함
+* 정적 메서드는 인스턴스의 상태를 변화시키지 않는 메서드를 만들 때 사용함
+
+# 클래스 메서드 사용하기
+* 클래스 메서드는 다음과 같이 메서드 위에 @classmethod를 붙임
+* 클래스 메서드는 첫 번째 매개변수에 cls를 지정해야 함
+* ```python
+  class 클래스 이름:
+    @classmethod
+    def 메서드(cls,매개변수1,매개변수2):
+        코드
+  ```
+* 예시
+* ```python
