@@ -67,8 +67,12 @@
          def start_engine(self):
              print(f"{self.color}의{self.brand}가 자동차의 엔진이 시작되고 있습니다.")
              # 자동차의 엔진을 시작하는 메시지를 출력하는 메서드
+     
+         def drive(self, distance):
+              print(f"{self.color}의{self.brand}가 {distance} 킬로미터 주행하는 중입니다.")
+              # 주행 거리를 출력하는 메시지를 출력하는 메서드
 
-        def stop_engine(self):
+         def stop_engine(self):
              print(f"{self.color}의{self.brand}가 엔진이 중단되었습니다.")
              # 자동차의 엔진을 중지하는 메시지 출력를 출력하는 메서드
      
