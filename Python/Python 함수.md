@@ -66,7 +66,7 @@
 
 # 함수의 결과를 반환하기
 * ```python
-  def add(a,b)
+  def add(a,b):
       return a+b # return을 사용하면 값을 함수 바깥으로 반환함(return에 값을 지정하지 않으면 None을 반환함)
 
   print(add(1,2))
@@ -80,7 +80,7 @@
 ### 또다른 예시
 
 * ```python
-  def add(a,b)
+  def add(a,b):
       return a+b
 
   x = add(1,2)
