@@ -51,5 +51,24 @@ data
 ![커피 강남점 출력 결과](https://github.com/Anjinhyoung/TIL-Today-I-Learned/assets/117788976/f3c0ba68-344c-4080-b6d3-a604f622a824)
 
 
+```python
+data = shop_seoul_coffee[shop_seoul_coffee['시군구명'] == '강남구']
+coffee_map = folium.Map(location=[data['위도'].mean(), data['경도'].mean()],zoom_start=14)
+
+for i in data.index:
+    coffee_name = data.loc[i,'상호명'] + '-'+  data.loc[i,'도로명주소']
+    popup = folium.Popup(coffee_name, max_width=500)
+    folium.Marker(location=[data.loc[i,'위도'], data.loc[i, '경도']], popup=popup).add_to(coffee_map)
+
+coffee_map
+# 강남구에 있는 커피점들 지도로 표시
+```
+
+
+* 출력 결과
+
+
+
+
 
 
