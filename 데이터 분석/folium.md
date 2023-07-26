@@ -58,7 +58,51 @@
   ```
 
   * 출력 결과
+
     ![folium-3](https://github.com/Anjinhyoung/TIL-Today-I-Learned/assets/117788976/c4d5fbd6-7288-42b4-836d-899176da91ab)
+
+
+ ### folium 활용하기3
+  ```python
+  map_folium = folium.Map(location=[37.56652479270633, 126.9779129116262], zoom_start=15)
+
+  popup = folium.Popup('서울특별시청', max_width=200)
+  folium.Marker(location=[37.56652479270633, 126.9779129116262], popup=popup,icon=folium.Icon(color='red',icon='star')).add_to(map_folium)
+
+  popup = folium.Popup('덕수궁', max_width=200)
+  folium.Marker(location=[37.56585320879458, 126.97514572197248], popup=popup,icon=folium.Icon(color='pink',icon='ok')).add_to(map_folium)
+
+  popup = folium.Popup('서울지방경찰청', max_width=200)
+  folium.Marker(location=[37.57504045678939, 126.97195576938117], popup=popup,icon=folium.Icon(color='orange',icon='user')).add_to(map_folium)
+
+  popup = folium.Popup('광화문', max_width=200)
+  folium.Marker(location=[37.57617987638928, 126.97694467807803], popup=popup,icon=folium.Icon(color='blue',icon='star')).add_to(map_folium)
+
+  popup = folium.Popup('영풍문고-종로본점', max_width=200)
+  folium.Marker(location=[37.56999947440024, 126.98228391170936], popup=popup,icon=folium.Icon(color='green',icon='star')).add_to(map_folium)
+
+  map_folium
+  ```
+ * 출력 결과
+ ![folium-4](https://github.com/Anjinhyoung/TIL-Today-I-Learned/assets/117788976/b4010d69-b67e-4a78-b566-e8bf64024786)
+
+
+ ### folium 활용하기4
+ ```python
+ # CircleMarker(): 원의 범위를 마커로 생성
+
+ map_folium = folium.Map(location=[37.56652479270633, 126.9779129116262], zoom_start=15)
+
+ popup = folium.Popup('서울특별시청', max_width=200)
+ folium.CircleMarker(location=[37.56652479270633, 126.9779129116262], popup=popup,
+               radius=100, color='red', fill_color='#EC407A').add_to(map_folium)
+
+ map_folium
+```
+* 출력 결과
+
+
+  ![folium-5](https://github.com/Anjinhyoung/TIL-Today-I-Learned/assets/117788976/a30cc3aa-b133-40b8-9caf-377dad0d9db5)
 
 
 
