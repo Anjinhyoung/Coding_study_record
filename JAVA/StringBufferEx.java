@@ -1,5 +1,3 @@
-package day31;
-
 public class StringBufferEx {
 	public static void main(String[] args) {
 //		StringBuffer buffer="test"; --> 불가능
