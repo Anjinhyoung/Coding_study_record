@@ -3,12 +3,12 @@ package day26;
 public class AbstractClass1 {
 	public static void main(String[] args) {
 		Pokemon pokemon= new Pikachu();
-		System.out.println("ÀÌ Æ÷ÄÏ¸óÀº:"+pokemon.getName());
+		System.out.println("ì´ í¬ì¼“ëª¬ì€:"+pokemon.getName());
 		pokemon.attack();
 		pokemon.sound();
 		
 		pokemon=new Squirtle();
-		System.out.println("ÀÌ Æ÷ÄÏ¸óÀº:"+pokemon.getName());
+		System.out.println("ì´ í¬ì¼“ëª¬ì€:"+pokemon.getName());
 		pokemon.attack();
 		pokemon.sound();
 		
@@ -25,30 +25,30 @@ abstract class Pokemon{
 }
 class Pikachu extends Pokemon{
 	Pikachu(){
-		this.name="ÇÇÄ«Ãò";
+		this.name="í”¼ì¹´ì¸„";
 	}
 	@Override
 	void attack() {
-		System.out.println("Àü±â °ø°İ");
+		System.out.println("ì „ê¸° ê³µê²©");
 	}
 	@Override
 	void sound() {
-		System.out.println("ÇÇÄ«ÇÇÄ«!");
+		System.out.println("í”¼ì¹´í”¼ì¹´!");
 	}
 }
 
 class Squirtle extends Pokemon{
 	Squirtle(){
-		this.name="²¿ºÎ±â";
+		this.name="ê¼¬ë¶€ê¸°";
 	}
 	@Override
 	void attack() {
-		System.out.println("¹° °ø°İ");
+		System.out.println("ë¬¼ ê³µê²©");
 	}
 
 	@Override
 	void sound() {
-		System.out.println("²¿ºÏ ²¿ºÏ!");
+		System.out.println("ê¼¬ë¶ ê¼¬ë¶!");
 	}}
 
 
