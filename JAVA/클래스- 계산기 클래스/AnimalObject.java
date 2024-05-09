@@ -7,16 +7,16 @@ public class AnimalObject {
 		animals[i]=new Animal();
 		}
 		
-		animals[0].kind="°í¾çÀÌ";
-		animals[0].name="³ª¸£";
+		animals[0].kind="ê³ ì–‘ì´";
+		animals[0].name="ë‚˜ë¥´";
 		animals[0].age =1;
 		
-		animals[1].kind="°­¾ÆÁö";
-		animals[1].name="ÃÊÄÚ";
+		animals[1].kind="ê°•ì•„ì§€";
+		animals[1].name="ì´ˆì½”";
 		animals[1].age =3;
 		
-		animals[2].kind="°í¾çÀÌ";
-		animals[2].name="´ÏÄÚ";
+		animals[2].kind="ê³ ì–‘ì´";
+		animals[2].name="ë‹ˆì½”";
 		animals[2].age =1;
 		
 		for(int i=0;i<3;i++) {
