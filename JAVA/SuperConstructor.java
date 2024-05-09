@@ -1,5 +1,3 @@
-package day24;
-
 public class SuperConstructor {
 	public static void main(String[] args) {
 			SportsCar mycar = new SportsCar("red",300);
