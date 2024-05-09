@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<string.h>
 void main() {
-	char title[20] = "¢ÍDS Cafe¢Í";
-	char menu[100] = "¨çÃß°¡ÇÏ±â\n¨è¼öÁ¤ÇÏ±â\n¨é°Ë»öÇÏ±â\n¨ê»èÁ¦ÇÏ±â\n¨ë¸ñ·Ïº¸±â\n¨ì³ª°¡±â";
-	//¸Ş´º ÀÌ¸§, ¸Ş´º °¡°İ
+	char title[20] = "â™¨DS Cafeâ™¨";
+	char menu[100] = "â‘ ì¶”ê°€í•˜ê¸°\nâ‘¡ìˆ˜ì •í•˜ê¸°\nâ‘¢ê²€ìƒ‰í•˜ê¸°\nâ‘£ì‚­ì œí•˜ê¸°\nâ‘¤ëª©ë¡ë³´ê¸°\nâ‘¥ë‚˜ê°€ê¸°";
+	//ë©”ë‰´ ì´ë¦„, ë©”ë‰´ ê°€ê²©
 	char arName[200][100] = { "", };
 	char temp[100] = "";
 	int arPrice[200] = { 0, };
@@ -18,8 +18,8 @@ void main() {
 		if (choice == 6) { break; }
 
 		switch (choice) {
-		case 1://Ãß°¡ÇÏ±â
-			printf("¸Ş´º ÀÌ¸§ : ");
+		case 1://ì¶”ê°€í•˜ê¸°
+			printf("ë©”ë‰´ ì´ë¦„ : ");
 			scanf_s("%s", temp, sizeof(temp));
 			isDup = 0;
 			for (int i = 0; i < cnt; i++) {
@@ -30,17 +30,17 @@ void main() {
 			}
 			
 			if (!isDup) {
-				printf("¸Ş´º °¡°İ : ");
+				printf("ë©”ë‰´ ê°€ê²© : ");
 				scanf_s("%d", arPrice + cnt);
 				strcpy_s(arName[cnt], sizeof(arName[cnt]), temp);
 				cnt++;
 			}
 			else {
-				printf("ÀÌ¹Ì Á¸ÀçÇÏ´Â »óÇ°ÀÔ´Ï´Ù.");
+				printf("ì´ë¯¸ ì¡´ì¬í•˜ëŠ” ìƒí’ˆì…ë‹ˆë‹¤.");
 			}
 			break;
-		case 2://¼öÁ¤ÇÏ±â
-			printf("¼öÁ¤ÇÏ½Ç ±âÁ¸ »óÇ°¸í : ");
+		case 2://ìˆ˜ì •í•˜ê¸°
+			printf("ìˆ˜ì •í•˜ì‹¤ ê¸°ì¡´ ìƒí’ˆëª… : ");
 			scanf_s("%s", temp, sizeof(temp));
 			isDup = 0;
 			for (int i = 0; i < cnt; i++) {
@@ -52,7 +52,7 @@ void main() {
 			}
 
 			if (isDup) {
-				printf("¼öÁ¤ÇÏ½Ç »õ·Î¿î »óÇ°¸í : ");
+				printf("ìˆ˜ì •í•˜ì‹¤ ìƒˆë¡œìš´ ìƒí’ˆëª… : ");
 				scanf_s("%s", temp, sizeof(temp));
 				isDup = 0;
 				for (int i = 0; i < cnt; i++) {
@@ -62,37 +62,37 @@ void main() {
 					}
 				}
 				if (!isDup) {
-					printf("»óÇ° °¡°İ : ");
+					printf("ìƒí’ˆ ê°€ê²© : ");
 					scanf_s("%d", arPrice + foundIdx);
 					strcpy_s(arName[foundIdx], sizeof(arName[foundIdx]), temp);
 				}
 				else {
-					printf("ÀÌ¹Ì Á¸ÀçÇÏ´Â »óÇ°ÀÔ´Ï´Ù.\n");
+					printf("ì´ë¯¸ ì¡´ì¬í•˜ëŠ” ìƒí’ˆì…ë‹ˆë‹¤.\n");
 				}
 			}
 			else {
-				printf("¼öÁ¤ÇÏ½Ç »óÇ°ÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.\n");
+				printf("ìˆ˜ì •í•˜ì‹¤ ìƒí’ˆì´ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.\n");
 			}
 
 			break;
-		case 3://°Ë»öÇÏ±â
-			printf("°Ë»öÇÏ½Ç »óÇ°¸í ÀÔ·Â : ");
+		case 3://ê²€ìƒ‰í•˜ê¸°
+			printf("ê²€ìƒ‰í•˜ì‹¤ ìƒí’ˆëª… ì…ë ¥ : ");
 			scanf_s("%s", temp, sizeof(temp));
 			isDup = 0;
 			for (int i = 0; i < cnt; i++) {
 				if (!strcmp(temp, arName[i])) {
-					printf("%s(%d¿ø)\n", arName[i], arPrice[i]);
+					printf("%s(%dì›)\n", arName[i], arPrice[i]);
 					isDup = 1;
 					break;
 				}
 			}
 
 			if (!isDup) {
-				printf("°Ë»öÇÏ½Å »óÇ°ÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.\n");
+				printf("ê²€ìƒ‰í•˜ì‹  ìƒí’ˆì´ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.\n");
 			}
 			break;
-		case 4://»èÁ¦ÇÏ±â
-			printf("»èÁ¦ÇÒ »óÇ°¸í ÀÔ·Â : ");
+		case 4://ì‚­ì œí•˜ê¸°
+			printf("ì‚­ì œí•  ìƒí’ˆëª… ì…ë ¥ : ");
 			scanf_s("%s", temp, sizeof(temp));
 			isDup = 0;
 
@@ -117,16 +117,16 @@ void main() {
 				cnt--;
 			}
 			else {
-				printf("»èÁ¦ÇÏ½Ç »óÇ°ÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.\n");
+				printf("ì‚­ì œí•˜ì‹¤ ìƒí’ˆì´ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.\n");
 			}
 			break;
-		case 5://¸ñ·Ïº¸±â
-			printf("»óÇ°¸í(°¡°İ)\n");
+		case 5://ëª©ë¡ë³´ê¸°
+			printf("ìƒí’ˆëª…(ê°€ê²©)\n");
 			for (int i = 0; i < cnt; i++) {
-				printf("%s(%d¿ø)\n", arName[i], arPrice[i]);
+				printf("%s(%dì›)\n", arName[i], arPrice[i]);
 			}
 			if (cnt == 0) {
-				printf("»óÇ° ¾øÀ½\n");
+				printf("ìƒí’ˆ ì—†ìŒ\n");
 			}
 			break;
 		}
