@@ -1,16 +1,14 @@
-package day12;
-
 import java.util.Arrays;
 
 public class Array_2 {
 	public static void main(String[] args) {
-//		a¶ó´Â Á¤¼öÇü ¹è¿­À» »ý¼ºÇÒ ¶§, ¹Ù·Î ÃÊ±â°ªÀ» ³Ö´Â ¹æ¹ý
+//		aë¼ëŠ” ì •ìˆ˜í˜• ë°°ì—´ì„ ìƒì„±í•  ë•Œ, ë°”ë¡œ ì´ˆê¸°ê°’ì„ ë„£ëŠ” ë°©ë²•
 		int[]a=new int[] {10,20,4,25,18};
-//		b¶ó´Â Á¤¼öÇü ¹è¿­À» »ý¼ºÇÒ¶§, ÃÊ±â°ªÀ¸·Î ³Ö´Â ¹æ¹ý(new int[] »ý·«°¡´É)
+//		bë¼ëŠ” ì •ìˆ˜í˜• ë°°ì—´ì„ ìƒì„±í• ë•Œ, ì´ˆê¸°ê°’ìœ¼ë¡œ ë„£ëŠ” ë°©ë²•(new int[] ìƒëžµê°€ëŠ¥)
 		int []b= {1,2,3,4,5,6,7};
-//		c¶ó´Â Á¤¼öÇü ¹è¿­À» ¼±¾ðÇÏ°í, 10°³ÀÇ Á¤¼öµéÀ» ¹­À» ¼ö ÀÖ´Â Å©±â ÇÒ´ç
+//		cë¼ëŠ” ì •ìˆ˜í˜• ë°°ì—´ì„ ì„ ì–¸í•˜ê³ , 10ê°œì˜ ì •ìˆ˜ë“¤ì„ ë¬¶ì„ ìˆ˜ ìžˆëŠ” í¬ê¸° í• ë‹¹
 		int c[]=new int[10];
-		//¹è¿­.length: ¹è¿­ÀÇ ±æÀÌ,¹è¿­ÀÇ ¿ä¼Ò°¹¼ö
+		//ë°°ì—´.length: ë°°ì—´ì˜ ê¸¸ì´,ë°°ì—´ì˜ ìš”ì†Œê°¯ìˆ˜
 		for(int i=0;i<c.length;i++) {
 			c[i]=i;
 		}
