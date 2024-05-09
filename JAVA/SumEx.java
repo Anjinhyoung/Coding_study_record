@@ -1,19 +1,17 @@
-package day18;
-
 public class SumEx {
 	public static void main(String[] args) {
 			sum(10,20);
 			sum(1.23,3.12);
 			sum(10,20,30);
 	}
-	//¸Ş¼­µåÀÇ ¸Å°³º¯¼ö Å¸ÀÔ¿¡ º¯È­
+	//ë©”ì„œë“œì˜ ë§¤ê°œë³€ìˆ˜ íƒ€ì…ì— ë³€í™”
 	static void sum(int x, int y) {
 		System.out.println(x+y);
 	}
 	static void sum(double x, double y) {
 		System.out.println(x+y);
 	}
-	// ¸Ş¼­µåÀÇ ¸Å°³º¯¼ö °¹¼ö¿¡ º¯È­
+	// ë©”ì„œë“œì˜ ë§¤ê°œë³€ìˆ˜ ê°¯ìˆ˜ì— ë³€í™”
 	static void sum(int x,int y,int z) {
 		System.out.println(x+y+z);
 	}
