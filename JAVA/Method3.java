@@ -1,12 +1,10 @@
-package day17;
-
 public class Method3 {
 	public static void main(String[] args) {
-			System.out.println("»ç°¢ÇüÀÇ ³ĞÀÌ:"+calculator(10,20));
+			System.out.println("ì‚¬ê°í˜•ì˜ ë„“ì´:"+calculator(10,20));
 			
 	}
 	static int calculator(int a,int b) {
-		System.out.println("<°è»êÀ» ½ÃÀÛÇÕ´Ï´Ù.>");
+		System.out.println("<ê³„ì‚°ì„ ì‹œì‘í•©ë‹ˆë‹¤.>");
 		int area= a*b;
 		return area;
 	}
