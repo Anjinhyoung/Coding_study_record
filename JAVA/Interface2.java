@@ -1,4 +1,4 @@
-public class Interface3 {
+public class Interface2 {
 	public static void main(String[] args) {
 		TourGuide guide=new TourGuide();
 		guide.leisureSports();
