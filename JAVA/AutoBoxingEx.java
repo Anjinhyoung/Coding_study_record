@@ -1,5 +1,3 @@
-package day32;
-
 public class AutoBoxingEx {
 	public static void main(String[] args) {
 		//Autoboxing
