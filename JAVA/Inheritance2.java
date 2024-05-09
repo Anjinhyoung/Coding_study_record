@@ -1,5 +1,3 @@
-package day24;
-
 public class Inheritance2 {
 	public static void main(String[] args) {
 		Leader leader= new Leader();
@@ -9,19 +7,19 @@ public class Inheritance2 {
 }
 class Student2{
 	void learn() {
-		System.out.println("¹è¿ì±â");
+		System.out.println("ë°°ìš°ê¸°");
 	}
 	void eat() {
-		System.out.println("¹ä¸Ô±â");
+		System.out.println("ë°¥ë¨¹ê¸°");
 	}
 	void say() {
-		System.out.println("¼±»ı´Ô ¾È³çÇÏ¼¼¿ä~");
+		System.out.println("ì„ ìƒë‹˜ ì•ˆë…•í•˜ì„¸ìš”~");
 	}
 }
 class Leader extends Student2{
 	void lead() {}
-	void say() { //¸Ş¼­µå ¿À¹ö¶óÀÌµù
-		System.out.println("¼±»ı´Ô²² ÀÎ»ç!");
+	void say() { //ë©”ì„œë“œ ì˜¤ë²„ë¼ì´ë”©
+		System.out.println("ì„ ìƒë‹˜ê»˜ ì¸ì‚¬!");
 		super.say();
 	}
 }
