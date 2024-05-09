@@ -1,12 +1,10 @@
-package day30;
-
 public class Exception3 {
 	public static void main(String[] args) {
 		try {
 			methodA();
 		}
 		catch(Exception e) {
-			System.out.println("¸ŞÀÎ¿¡¼­ Ã³¸®");
+			System.out.println("ë©”ì¸ì—ì„œ ì²˜ë¦¬");
 		}
 	}
 	public static void methodA() throws Exception{
@@ -20,4 +18,6 @@ public class Exception3 {
 		throw e;
 	}
 }
+
+
 
