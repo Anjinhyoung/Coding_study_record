@@ -1,13 +1,12 @@
-package day18;
-//µÎ¼ö¸¦ Àü´Ş¹Ş¾Æ »çÄ¢¿¬»ê ±¸ÇöÇÏ±â(´Ü Á¤¼ö,½Ç¼ö ¸ğµÎ °¡´É)
+//ë‘ìˆ˜ë¥¼ ì „ë‹¬ë°›ì•„ ì‚¬ì¹™ì—°ì‚° êµ¬í˜„í•˜ê¸°(ë‹¨ ì •ìˆ˜,ì‹¤ìˆ˜ ëª¨ë‘ ê°€ëŠ¥)
 public class Calc {
 	public static void main(String[] args) {
-		System.out.println("--Á¤¼öÀÇ »çÄ¢¿¬»ê--");
+		System.out.println("--ì •ìˆ˜ì˜ ì‚¬ì¹™ì—°ì‚°--");
 		System.out.println("sum(10,20):"+sum(10,20));
 		System.out.println("sub(10,20):"+sub(10,20));
 		System.out.println("mul(10,20):"+mul(10,20));
 		System.out.println("div(10,20):"+div(10,20));
-		System.out.println("--½Ç¼öÀÇ »çÄ¢¿¬»ê--");
+		System.out.println("--ì‹¤ìˆ˜ì˜ ì‚¬ì¹™ì—°ì‚°--");
 		System.out.println("sum(1.2,2.3):"+sum(1.2,2.3));
 		System.out.println("sub(1.2,2.3):"+sub(1.2,2.3));
 		System.out.println("mul(1.2,2.3):"+mul(1.2,2.3));
@@ -15,18 +14,18 @@ public class Calc {
 		System.out.println("sum(hello,world): "+sum("hello","world!"));
 	
 	}
-	//Á¤¼öÇüÀÇ »çÄ¢¿¬»ê
+	//ì •ìˆ˜í˜•ì˜ ì‚¬ì¹™ì—°ì‚°
 	static int sum(int x,int y) {return x+y;}
 	static int sub(int x,int y) {return x-y;}
 	static int mul(int x,int y) {return x*y;}
 	static int div(int x,int y) {return x/y;}
 	
-	//½Ç¼öÇüÀÇ »çÄ¢¿¬»ê
+	//ì‹¤ìˆ˜í˜•ì˜ ì‚¬ì¹™ì—°ì‚°
 	static double sum(double x,double y) {return x+y;}
 	static double sub(double x,double y) {return x-y;}
 	static double mul(double x,double y) {return x*y;}
 	static double div(double x,double y) {return x/y;}
-	//¹®ÀÚ¿­ÀÇ µ¡¼À¿¬»ê
+	//ë¬¸ìì—´ì˜ ë§ì…ˆì—°ì‚°
 	static String sum(String x,String y) {return x+y;}
 	
 }
