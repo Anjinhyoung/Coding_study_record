@@ -1,5 +1,3 @@
-package day27;
-
 public class Interface4 {
 	public static void main(String[] args) {
 		MyCellPhone phone1=new MyCellPhone();
@@ -50,6 +48,6 @@ class MyCellPhone implements Camera,Call,Memo,Clock{
 
 class PhoneUser{
 	void call(Call c) {
-		System.out.println("ÀüÈ­¸¦ °É¾ú½À´Ï´Ù!");
+		System.out.println("Ã€Ã¼ÃˆÂ­Â¸Â¦ Â°Ã‰Â¾ÃºÂ½Ã€Â´ÃÂ´Ã™!");
 	}
 }
