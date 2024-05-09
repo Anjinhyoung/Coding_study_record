@@ -1,4 +1,4 @@
-public class Exam31 {
+public class Exam {
 	public static void main(String[] args) {
 		Car mycar=new Car();
 		System.out.println("시동 처음 초기화:"+mycar.powerOn);
