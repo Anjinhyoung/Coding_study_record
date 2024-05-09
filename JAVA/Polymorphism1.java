@@ -1,11 +1,9 @@
-package day25;
-
 public class Polymorphism1 {
 	public static void main(String[] args) {
 
-		A obj = new B();//ºÎ¸ğ º¯¼ö= ÀÚ½Ä°ª : ¾÷Ä³½ºÆÃ
+		A obj = new B();//ë¶€ëª¨ ë³€ìˆ˜= ìì‹ê°’ : ì—…ìºìŠ¤íŒ…
 		obj.methodA();
-//		obj.methodB();¿¡·¯¹ß»ı
+//		obj.methodB();ì—ëŸ¬ë°œìƒ
 	}
 }
 class A{
