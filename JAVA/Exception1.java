@@ -1,5 +1,3 @@
-package day29;
-
 public class Exception1 {
 	public static void main(String[] args) {
 		int a=0;
