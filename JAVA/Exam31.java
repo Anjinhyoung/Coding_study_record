@@ -1,32 +1,30 @@
-package day20;
-
 public class Exam31 {
 	public static void main(String[] args) {
 		Car mycar=new Car();
-		System.out.println("½Ãµ¿ Ã³À½ ÃÊ±âÈ­:"+mycar.powerOn);
-		System.out.println("Â÷ÀÇ »ö»ó ÃÊ±âÈ­:"+mycar.color);
-		System.out.println("¹ÙÄûÀÇ ¼ö ÃÊ±âÈ­:"+mycar.wheel);
-		System.out.println("¼Ó·Â ÃÊ±âÈ­:"+mycar.speed);
-		System.out.println("¿ÍÀÌÆÛ ÀÛµ¿ ÃÊ±âÈ­:"+mycar.wiperOn);
+		System.out.println("ì‹œë™ ì²˜ìŒ ì´ˆê¸°í™”:"+mycar.powerOn);
+		System.out.println("ì°¨ì˜ ìƒ‰ìƒ ì´ˆê¸°í™”:"+mycar.color);
+		System.out.println("ë°”í€´ì˜ ìˆ˜ ì´ˆê¸°í™”:"+mycar.wheel);
+		System.out.println("ì†ë ¥ ì´ˆê¸°í™”:"+mycar.speed);
+		System.out.println("ì™€ì´í¼ ìž‘ë™ ì´ˆê¸°í™”:"+mycar.wiperOn);
 		
 		mycar.power();
-		System.out.println("½Ãµ¿ ¸Þ¼­µå µ¿ÀÛ:"+mycar.powerOn);
+		System.out.println("ì‹œë™ ë©”ì„œë“œ ë™ìž‘:"+mycar.powerOn);
 		mycar.power();
-		System.out.println("½Ãµ¿ ¸Þ¼­µå ´Ù½Ã µ¿ÀÛ:"+mycar.powerOn);
+		System.out.println("ì‹œë™ ë©”ì„œë“œ ë‹¤ì‹œ ë™ìž‘:"+mycar.powerOn);
 		
 		mycar.color="black";
-		System.out.println("ÇöÀç Â÷ÀÇ »ö»ó:"+mycar.color);
+		System.out.println("í˜„ìž¬ ì°¨ì˜ ìƒ‰ìƒ:"+mycar.color);
 		
 	}
 
 }
 
 class Car{
-	boolean powerOn; // ½Ãµ¿
-	String color; //»ö±ò
-	int wheel; //¹ÙÄû¼ö
-	int speed; //¼Ó·Â
-	boolean wiperOn;//¿ÍÀÌÆÛ
+	boolean powerOn; // ì‹œë™
+	String color; //ìƒ‰ê¹”
+	int wheel; //ë°”í€´ìˆ˜
+	int speed; //ì†ë ¥
+	boolean wiperOn;//ì™€ì´í¼
 	
 	void power() {powerOn=!powerOn;}//true->false, false->true
 	void speedUp() {speed++;}
