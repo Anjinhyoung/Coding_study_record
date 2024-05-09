@@ -14,6 +14,6 @@ void main() {
 
 	scanf_s("%s", nation, sizeof(nation));
 	if (!strcmp(nation, "korea")) {
-		printf("╣н ╟╙ю╨ ╟╟ю╨ ╟╙ют╢о╢ы.\n");
+		printf("б╣ц▌ б╟б╙ц─б╨ б╟б╟ц─б╨ б╟б╙ц─ц■б╢ц▐б╢ц≥.\n");
 	}
 }
