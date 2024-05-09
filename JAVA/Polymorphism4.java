@@ -1,5 +1,3 @@
-package day25;
-
 public class Polymorphism4 {
 	public static void main(String[] args) {
 		Animal lion1= new Lion();
@@ -15,26 +13,26 @@ public class Polymorphism4 {
 	}
 }
 class Animal{
-	void breath() {System.out.println("¼û½¬±â");}
+	void breath() {System.out.println("ìˆ¨ì‰¬ê¸°");}
 }
 class Lion extends Animal{
 	public String toString(){
-		return "»çÀÚ";
+		return "ì‚¬ì";
 	}
 }
 class Rabbit extends Animal{
 	public String toString(){
-		return "Åä³¢";
+		return "í† ë¼";
 	}
 }
 class Monkey extends Animal{
 	public String toString(){
-		return "¿ø¼şÀÌ";
+		return "ì›ìˆ­ì´";
 	}
 }
 class ZooKeeper{
 	void feed(Animal animal) {
-		System.out.println(animal+"¿¡°Ô ¸ÔÀÌÁÖ±â");
+		System.out.println(animal+"ì—ê²Œ ë¨¹ì´ì£¼ê¸°");
 	}
 	
 	
