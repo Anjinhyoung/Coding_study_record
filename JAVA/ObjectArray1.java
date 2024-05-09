@@ -1,8 +1,6 @@
-package day22;
-
 public class ObjectArray1 {
 	public static void main(String[] args) {
-//		Ε¬·΅½ΊΈν °΄ΓΌΉθΏ­Έν[]=new Ε¬·΅½ΊΈν[Ε©±β];
+//		ν΄λμ¤λª… κ°μ²΄λ°°μ—΄λª…[]=new ν΄λμ¤λª…[ν¬κΈ°];
 		Aclass ar[]=new Aclass[3];
 		ar[0]=new Aclass();
 		ar[0].x=100;
