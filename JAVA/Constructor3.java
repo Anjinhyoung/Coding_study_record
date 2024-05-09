@@ -1,8 +1,6 @@
-package day23;
-
 public class Constructor3 {
 	public static void main(String[] args) {
-		Bclass b1= new Bclass("°¡±æµ¿");
+		Bclass b1= new Bclass("ê°€ê¸¸ë™");
 		System.out.println(b1.name);
 		Bclass b= new Bclass();
 		System.out.println(b);
@@ -11,10 +9,10 @@ public class Constructor3 {
 }
 class Bclass{
 	String name;
-	//»ı¼ºÀÚ¿À¹ö·Îµù: ¿©·¯°³ »ı¼ºÀÚ Áßº¹Á¤ÀÇ
+	//ìƒì„±ìì˜¤ë²„ë¡œë”©: ì—¬ëŸ¬ê°œ ìƒì„±ì ì¤‘ë³µì •ì˜
 	Bclass(){}
-	Bclass(String name){ //¸Å°³º¯¼ö »ı¼ºÀÚ
-		System.out.println("BclassÀÇ ¸Å°³º¯¼ö »ı¼ºÀÚ( )");
+	Bclass(String name){ //ë§¤ê°œë³€ìˆ˜ ìƒì„±ì
+		System.out.println("Bclassì˜ ë§¤ê°œë³€ìˆ˜ ìƒì„±ì( )");
 		this.name=name;
 	}
 }
