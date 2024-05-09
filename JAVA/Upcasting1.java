@@ -1,13 +1,11 @@
-package day25;
-
 public class Upcasting1 {
 	public static void main(String[] args) {
-		Student st1= new Student("°¡±æµ¿",13,"°ÔÀÓÇÏ±â",3);
+		Student st1= new Student("ê°€ê¸¸ë™",13,"ê²Œì„í•˜ê¸°",3);
 		st1.info();
 		st1.study();
 		System.out.println(st1.grade);
-		// ¾÷Ä³½ºÆÃ
-		Human h1=new Student("³ª±æµ¿",17,"·ÑÇÏ±â",3);
+		// ì—…ìºìŠ¤íŒ…
+		Human h1=new Student("ë‚˜ê¸¸ë™",17,"ë¡¤í•˜ê¸°",3);
 		h1.info();
 //		h1.study();
 //		System.out.println(h1.grade);
@@ -36,12 +34,12 @@ class Student extends Human{
 		super(name,age,hobby);
 		this.grade=grade;
 	}
-	void info() { //¿À¹ö¶óÀÌµù
+	void info() { //ì˜¤ë²„ë¼ì´ë”©
 		super.info();
 		System.out.println("grade:"+grade);
 	}
 	void study() {
-		System.out.println("°øºÎÇÏ±â~");
+		System.out.println("ê³µë¶€í•˜ê¸°~");
 	}
 }
 
