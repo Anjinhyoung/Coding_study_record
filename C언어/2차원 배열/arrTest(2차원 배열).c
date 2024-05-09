@@ -1,14 +1,14 @@
 #include<stdio.h>
 void main() {
 	int arrData[2][3] = { 0, };
-	for (int i = 0; i < 2; i++) {//Çà
-		for (int j = 0; j < 3; j++) {//¿­
+	for (int i = 0; i < 2; i++) {//Ã‡Ã 
+		for (int j = 0; j < 3; j++) {//Â¿Â­
 			arrData[i][j] = 5;
 		}
 	}
 
-	for (int i = 0; i < 2; i++) {//Çà
-		for (int j = 0; j < 3; j++) {//¿­
+	for (int i = 0; i < 2; i++) {//Ã‡Ã 
+		for (int j = 0; j < 3; j++) {//Â¿Â­
 			printf("%d", arrData[i][j]);
 		}
 		printf("\n");
