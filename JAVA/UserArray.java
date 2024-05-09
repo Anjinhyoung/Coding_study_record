@@ -1,5 +1,3 @@
-package day22;
-
 import java.util.Scanner;
 
 public class UserArray {
