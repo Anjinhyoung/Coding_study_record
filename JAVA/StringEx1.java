@@ -1,5 +1,3 @@
-package day31;
-
 public class StringEx1 {
 	public static void main(String[] args) {
 		String str1 = "Hello World";
