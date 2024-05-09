@@ -1,5 +1,3 @@
-package day32;
-
 public class IntegerWrapper {
 	public static void main(String[] args) {
 		Integer i = 100;
