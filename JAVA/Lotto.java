@@ -1,6 +1,4 @@
-package day13;
-
-import java.util.*;//java.util ÆĞÅ°Áö¿¡ ÀÖ´Â ¸ğµç Å¬·¡½º import
+import java.util.*;//java.util íŒ¨í‚¤ì§€ì— ìˆëŠ” ëª¨ë“  í´ë˜ìŠ¤ import
 
 public class Lotto {
 	public static void main(String[] args) {
@@ -10,7 +8,7 @@ public class Lotto {
 		int userAr[] = new int[6];
 		int bonus, bonusUser;
 		int count = 0;
-		// ·Î¶Ç¹è¿­¿¡ 6°³ÀÇ ·£´ı°ªÀ» ÀúÀå
+		// ë¡œë˜ë°°ì—´ì— 6ê°œì˜ ëœë¤ê°’ì„ ì €ì¥
 		for (int i = 0; i < 6; i++) {
 			lottoAr[i] = random.nextInt(45) + 1;// 0~44->1~45
 		}
@@ -19,15 +17,15 @@ public class Lotto {
 
 		System.out.println("Lotto:"+Arrays.toString(lottoAr)+",bonus:"+bonus);
 		
-		// »ç¿ëÀÚ¿¡°Ô 6°³ÀÇ °ª°ú º¸³Ê½º¸¦ ÀÔ·Â
-		System.out.print("¼ıÀÚ 6°³ ÀÔ·Â:");
+		// ì‚¬ìš©ìì—ê²Œ 6ê°œì˜ ê°’ê³¼ ë³´ë„ˆìŠ¤ë¥¼ ì…ë ¥
+		System.out.print("ìˆ«ì 6ê°œ ì…ë ¥:");
 		for (int i = 0; i < 6; i++) {
 			userAr[i] = sc.nextInt();
 		}
-		System.out.print("º¸³Ê½º °ª ÀÔ·Â:");
+		System.out.print("ë³´ë„ˆìŠ¤ ê°’ ì…ë ¥:");
 		bonusUser = sc.nextInt();
 		System.out.println("User:"+Arrays.toString(userAr)+",bonus:"+bonusUser);
-		// ·Î¶Ç¹è¿­ÀÇ °ª°ú »ç¿ëÀÚ¹è¿­ÀÇ °ªÁß °°Àº °ªÀÌ ¸î°³ ÀÖ´ÂÁö Ä«¿îÆÃ
+		// ë¡œë˜ë°°ì—´ì˜ ê°’ê³¼ ì‚¬ìš©ìë°°ì—´ì˜ ê°’ì¤‘ ê°™ì€ ê°’ì´ ëª‡ê°œ ìˆëŠ”ì§€ ì¹´ìš´íŒ…
 		
 		for (int j = 0; j < 6; j++) {
 			for (int i = 0; i < 6; i++) {
@@ -36,28 +34,28 @@ public class Lotto {
 				}
 			}
 		}
-		System.out.println("ÃÑ ¸ÂÃá °¹¼ö:"+count);
-		//countÀÇ °¹¼ö¿¡µû¶ó¼­ µî¼öÁ¤ÇÏ±â
+		System.out.println("ì´ ë§ì¶˜ ê°¯ìˆ˜:"+count);
+		//countì˜ ê°¯ìˆ˜ì—ë”°ë¼ì„œ ë“±ìˆ˜ì •í•˜ê¸°
 		if(count==6) {
-			System.out.println("ÃàÇÏµå¸³´Ï´Ù! 1µîÀÔ´Ï´Ù!");
+			System.out.println("ì¶•í•˜ë“œë¦½ë‹ˆë‹¤! 1ë“±ì…ë‹ˆë‹¤!");
 		}
 		else if(count==5) {
 			if(bonus==bonusUser) {
-				System.out.println("ÃàÇÏµå¸³´Ï´Ù! 2µîÀÔ´Ï´Ù.");
+				System.out.println("ì¶•í•˜ë“œë¦½ë‹ˆë‹¤! 2ë“±ì…ë‹ˆë‹¤.");
 			}
 			else {
-				System.out.println("ÃàÇÏµå¸³´Ï´Ù! 3µîÀÔ´Ï´Ù.");
+				System.out.println("ì¶•í•˜ë“œë¦½ë‹ˆë‹¤! 3ë“±ì…ë‹ˆë‹¤.");
 			}
 			
 		}
 		else if(count==4) {
-			System.out.println("ÃàÇÏµå¸³´Ï´Ù! 4µîÀÔ´Ï´Ù.");
+			System.out.println("ì¶•í•˜ë“œë¦½ë‹ˆë‹¤! 4ë“±ì…ë‹ˆë‹¤.");
 		}
 		else if(count==3) {
-			System.out.println("ÃàÇÏµå¸³´Ï´Ù! 5µîÀÔ´Ï´Ù.");
+			System.out.println("ì¶•í•˜ë“œë¦½ë‹ˆë‹¤! 5ë“±ì…ë‹ˆë‹¤.");
 		}
 		else{
-			System.out.println("¾Æ½±Áö¸¸ ´ÙÀ½±âÈ¸¿¡¤Ğ¤Ğ~");
+			System.out.println("ì•„ì‰½ì§€ë§Œ ë‹¤ìŒê¸°íšŒì—ã… ã… ~");
 		}
 
 	}
