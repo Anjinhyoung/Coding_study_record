@@ -6,15 +6,15 @@ void main() {
 
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 3; j++) {
-			printf("%dµ¿ %dÈ£ ¿ù¼¼ ÀÔ·Â[´ÜÀ§:¸¸¿ø]\n", i+1, j+1);
+			printf("%dë™ %dí˜¸ ì›”ì„¸ ìž…ë ¥[ë‹¨ìœ„:ë§Œì›]\n", i+1, j+1);
 			scanf_s("%d", arrIncome[i] + j);
 			total += arrIncome[i][j];
 		}
 	}
 
 	avg = (double)total / 6;
-	printf("ÃÑ ¿ù¼¼ : %d ¸¸¿ø\n", total);
-	printf("Æò±Õ ¿ù¼¼ : %.2f ¸¸¿ø", avg);
+	printf("ì´ ì›”ì„¸ : %d ë§Œì›\n", total);
+	printf("í‰ê·  ì›”ì„¸ : %.2f ë§Œì›", avg);
 
 
 }
