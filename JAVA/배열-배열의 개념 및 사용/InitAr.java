@@ -1,5 +1,3 @@
-package day12;
-
 public class InitAr {
 	public static void main(String[] args) {
 			int arInt[]=new int[3];
