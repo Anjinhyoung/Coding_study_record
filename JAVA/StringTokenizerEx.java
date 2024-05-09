@@ -1,5 +1,3 @@
-package day31;
-
 import java.util.StringTokenizer;
 
 public class StringTokenizerEx {
