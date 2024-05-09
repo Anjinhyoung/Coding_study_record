@@ -1,5 +1,3 @@
-package day29;
-
 import java.util.Scanner;
 public class Finally2 {
 	public static void main(String[] args) {
@@ -14,10 +12,10 @@ public class Finally2 {
 			System.out.println("c:"+c);
 		}
 		catch(ArithmeticException e) {
-		System.out.println("¿À·ù°¡ ¹ß»ıÇß½À´Ï´Ù.");
+		System.out.println("ì˜¤ë¥˜ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.");
 		}
 		finally {
-			System.out.println("¹«Á¶°Ç ½ÇÇà~");
+			System.out.println("ë¬´ì¡°ê±´ ì‹¤í–‰~");
 		}
 	}
 }
