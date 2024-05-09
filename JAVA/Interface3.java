@@ -48,6 +48,6 @@ class MyCellPhone implements Camera,Call,Memo,Clock{
 
 class PhoneUser{
 	void call(Call c) {
-		System.out.println("ÀüÈ­¸¦ °É¾ú½À´Ï´Ù!");
+		System.out.println("전화를 걸었습니다!");
 	}
 }
