@@ -1,16 +1,14 @@
-package day24;
-
 public class ObjectTest {
 	public static void main(String[] args) {
 		Aclass a1=new Aclass();
 		Aclass a2=new Aclass();
 		
-		//toString(): °´Ã¼Á¤º¸¸¦ ¹®ÀÚ¿­ Ãâ·Â
+		//toString(): ê°ì²´ì •ë³´ë¥¼ ë¬¸ìì—´ ì¶œë ¥
 		System.out.println(a1.toString());
 		System.out.println(a1);
-		//equals(): µÎ °´Ã¼°¡ µ¿ÀÏÇÑ°¡¸¦ ºñ±³
+		//equals(): ë‘ ê°ì²´ê°€ ë™ì¼í•œê°€ë¥¼ ë¹„êµ
 		System.out.println(a1.equals(a1));
-		//getClass():°´Ã¼ÀÇ Å¬·¡½ºÁ¤º¸¸¦ °¡Á®¿È
+		//getClass():ê°ì²´ì˜ í´ë˜ìŠ¤ì •ë³´ë¥¼ ê°€ì ¸ì˜´
 		System.out.println(a1.getClass());
 	}
 
