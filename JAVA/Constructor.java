@@ -1,13 +1,11 @@
-package day23;
-
 public class Constructor {
 	public static void main(String[] args) {
 			Aclass a=new Aclass();
 	}
 }
 class Aclass{
-	//±âº»»ı¼ºÀÚ(default »ı¼ºÀÚ)
+	//ê¸°ë³¸ìƒì„±ì(default ìƒì„±ì)
 	public Aclass(){
-		System.out.println("Aclass ±âº»»ı¼ºÀÚ( )");
+		System.out.println("Aclass ê¸°ë³¸ìƒì„±ì( )");
 	}
 }
