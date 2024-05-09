@@ -1,27 +1,25 @@
-package day14;
-
 import java.util.Scanner;
 
 public class Array3 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int scores[][] = new int[4][3];
-		String subject[] = { "±¹¾î", "¿µ¾î", "¼öÇĞ" };
-//2Â÷¿ø ¹è¿­ È°¿ëÇØ¼­ »ç¿ëÀÚ¿¡°Ô ÀÔ·Â¹ŞÀº °ª ÀúÀåÇÏ´Â ¹æ¹ı
+		String subject[] = { "êµ­ì–´", "ì˜ì–´", "ìˆ˜í•™" };
+//2ì°¨ì› ë°°ì—´ í™œìš©í•´ì„œ ì‚¬ìš©ìì—ê²Œ ì…ë ¥ë°›ì€ ê°’ ì €ì¥í•˜ëŠ” ë°©ë²•
 		for (int j = 0; j < 4; j++) {
-			System.out.println((j + 1) + "¹ø ÇĞ»ı Á¡¼ö----");
+			System.out.println((j + 1) + "ë²ˆ í•™ìƒ ì ìˆ˜----");
 			for (int i = 0; i < 3; i++) {
 				System.out.print(subject[i] + ":");
 				scores[j][i] = sc.nextInt();
 			}
 		}
-//		2Â÷¿ø¹è¿­¿¡ ÀúÀåµÈ °ªÀ» Ãâ·Â
+//		2ì°¨ì›ë°°ì—´ì— ì €ì¥ëœ ê°’ì„ ì¶œë ¥
 		for (int i = 0; i < 3; i++) {
 			System.out.print("\t" + subject[i]);
 		}
 		System.out.println();
 		for (int j = 0; j < 4; j++) {
-			System.out.print(j+1+"¹ø:\t");
+			System.out.print(j+1+"ë²ˆ:\t");
 			for (int i = 0; i < 3; i++) {
 				System.out.print(scores[j][i] + "\t");
 			}
