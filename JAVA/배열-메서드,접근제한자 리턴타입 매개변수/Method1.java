@@ -1,18 +1,16 @@
-package day17;
-
 public class Method1 {
 	public static void main(String[] args) {
 //			open();
 		f1(200);
 	}
 	static void open(){
-		System.out.println("¹®À»¿­±â");
-		System.out.println("¹Ù´ÚÃ»¼Ò");
-		System.out.println("Æ÷½º±âÄÑ");
-		System.out.println("»§À»Áø¿­");
+		System.out.println("ë¬¸ì„ì—´ê¸°");
+		System.out.println("ë°”ë‹¥ì²­ì†Œ");
+		System.out.println("í¬ìŠ¤ê¸°ì¼œ");
+		System.out.println("ë¹µì„ì§„ì—´");
 		
 	}
-	static void f1(int x) {//ÇÔ¼ö È£Ãâ ½Ã 100À» Àü´Ş¹Ş¾Æ¼­, Àü´Ş¹ŞÀº 100À» Ãâ·ÂÇÏÀÚ!
+	static void f1(int x) {//í•¨ìˆ˜ í˜¸ì¶œ ì‹œ 100ì„ ì „ë‹¬ë°›ì•„ì„œ, ì „ë‹¬ë°›ì€ 100ì„ ì¶œë ¥í•˜ì!
 		System.out.println("x:"+x);
 	}
 }
