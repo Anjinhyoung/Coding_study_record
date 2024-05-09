@@ -1,5 +1,3 @@
-package day27;
-
 public class Interface1 {
 	public static void main(String[] args) {
 		 B b =new B();
@@ -11,9 +9,9 @@ public class Interface1 {
 
 interface Ainter{
 	final int x=10;
-	int y=20; //final »ý·«°¡´É
+	int y=20; //final Â»Ã½Â·Â«Â°Â¡Â´Ã‰
 	abstract void methodA();
-	void methodB(); //abstract »ý·«°¡´É
+	void methodB(); //abstract Â»Ã½Â·Â«Â°Â¡Â´Ã‰
 }
 class B implements Ainter{
 	@Override
