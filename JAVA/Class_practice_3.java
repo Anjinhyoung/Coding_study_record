@@ -1,5 +1,3 @@
-package day21;
-
 public class Class_practice_3 {
 	public static void main(String[] args) {
 			System.out.println(Car.wheel);
@@ -9,7 +7,7 @@ public class Class_practice_3 {
 			
 			Car myCar2=new Car();
 			
-			System.out.println("<º¯°æ Àü>");
+			System.out.println("<ë³€ê²½ ì „>");
 			System.out.println("myCar1.speed:"+myCar1.speed);
 			System.out.println("myCar2.speed:"+myCar2.speed);
 			System.out.println("myCar1.wheel:"+myCar1.wheel);
@@ -18,7 +16,7 @@ public class Class_practice_3 {
 			myCar2.speed=100;
 			myCar2.wheel=5;
 			
-			System.out.println("<º¯°æ ÈÄ>");
+			System.out.println("<ë³€ê²½ í›„>");
 			System.out.println("myCar1.speed:"+myCar1.speed);
 			System.out.println("myCar2.speed:"+myCar2.speed);
 			System.out.println("myCar1.wheel:"+myCar1.wheel);
@@ -31,7 +29,7 @@ public class Class_practice_3 {
 }
 
 class Car{
-		static int wheel=4; //Å¬·¡½ºº¯¼ö
-		int speed; //ÀÎ½ºÅÏ½º º¯¼ö
+		static int wheel=4; //í´ë˜ìŠ¤ë³€ìˆ˜
+		int speed; //ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜
 				
 }
