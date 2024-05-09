@@ -1,5 +1,3 @@
-package day21;
-
 public class SportsMain {
 	public static void main(String[] args) {
 		Member member1 = new Member();
@@ -7,22 +5,22 @@ public class SportsMain {
 		Member member3 = new Member();
 		Member member4 = new Member();
 		
-		member1.name="±èÃ¶¼ö";
+		member1.name="ê¹€ì² ìˆ˜";
 		member1.age=32;
-		member1.gender="³²ÀÚ";
+		member1.gender="ë‚¨ì";
 		
-		member2.name="±è¹ÎÈ£";
+		member2.name="ê¹€ë¯¼í˜¸";
 		member2.age=28;
-		member2.gender="³²ÀÚ";
+		member2.gender="ë‚¨ì";
 		
-		member3.name="ÀÌ¿µÈñ";
+		member3.name="ì´ì˜í¬";
 		member3.age=24;
-		member3.gender="¿©ÀÚ";
+		member3.gender="ì—¬ì";
 		
 
-		member4.name="°í¼®Ãµ";
+		member4.name="ê³ ì„ì²œ";
 		member4.age=32;
-		member4.gender="³²ÀÚ";
+		member4.gender="ë‚¨ì";
 		
 		Member.centerName="Bye";
 		
