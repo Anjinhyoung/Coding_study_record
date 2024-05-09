@@ -1,4 +1,4 @@
-public class Inner4 {
+public class Inner {
 	public static void main(String[] args) {
 		OuterClass oc = new OuterClass();
 		System.out.println("OuterClass의 a 값: "+oc.a);
