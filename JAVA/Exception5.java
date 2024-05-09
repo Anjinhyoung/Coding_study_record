@@ -1,5 +1,3 @@
-package day30;
-
 public class Exception5 {
 	public static void main(String[] args) {
 		int age=-19;
@@ -12,7 +10,7 @@ public class Exception5 {
 	}
 	public static void ticketing(int age)throws AgeException{
 		if(age<0) {
-			throw new AgeException("³ªÀÌ ÀÔ·ÂÀÌ Àß¸øµÇ¾ú½À´Ï´Ù.");
+			throw new AgeException("ë‚˜ì´ ìž…ë ¥ì´ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 	}
 }
