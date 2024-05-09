@@ -1,5 +1,3 @@
-package day15;
-
 import java.util.Arrays;
 
 public class Array_4 {
