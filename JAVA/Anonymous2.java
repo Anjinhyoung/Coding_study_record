@@ -1,10 +1,9 @@
-package day28;
 
 public class Anonymous2 {
 	public static void main(String[] args) {
 		OuterClass1 o = new OuterClass1() {
 			void a() {
-				System.out.println("»õ·Ó°Ô Á¤ÀÇÇÑ ÀÍ¸íÅ¬·¡½º ¸Ş¼­µå");
+				System.out.println("ìƒˆë¡­ê²Œ ì •ì˜í•œ ìµëª…í´ë˜ìŠ¤ ë©”ì„œë“œ");
 			}
 		};
 		o.a();
