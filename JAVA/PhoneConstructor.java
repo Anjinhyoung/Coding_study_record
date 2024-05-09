@@ -1,5 +1,3 @@
-package day23;
-
 public class PhoneConstructor {
 	public static void main(String[] args) {
 		Iphone myphone1=new Iphone();
