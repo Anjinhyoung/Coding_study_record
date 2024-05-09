@@ -8,11 +8,11 @@ struct Animal {
 };
 
 void main() {
-	//struct Animal dog = { "Max", 10, "°³²­" };
+	//struct Animal dog = { "Max", 10, "Â°Â³Â²Â­" };
 	struct Animal dog;
 	strcpy_s(dog.name, sizeof(dog.name), "max");
 	dog.age = 20;
-	strcpy_s(dog.feed, sizeof(dog.feed), "°³²­");
+	strcpy_s(dog.feed, sizeof(dog.feed), "Â°Â³Â²Â­");
 
 	printf("%s, %d, %s", dog.name, dog.age, dog.feed);
 }
