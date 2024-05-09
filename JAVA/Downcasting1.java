@@ -1,11 +1,9 @@
-package day25;
-
 public class Downcasting1 {
 	public static void main(String[] args) {
-		//¾÷Ä³½ºÆÃ
-		Human h1=new Student("°¡±æµ¿",20,"°ÔÀÓÇÏ±â",3);
+		//ì—…ìºìŠ¤íŒ…
+		Human h1=new Student("ê°€ê¸¸ë™",20,"ê²Œì„í•˜ê¸°",3);
 //		h1.study();
-		//´Ù¿îÄ³½ºÆÃ
+		//ë‹¤ìš´ìºìŠ¤íŒ…
 		Student s1= (Student)h1;
 		s1.study();
 		
