@@ -1,9 +1,7 @@
-package day26;
-
 public class ShapeMain {
 	public static void main(String[] args) {
 		Shape shapes[]=new Shape[3];
-		//ºÎ¸ğÀÇ °´Ã¼¹è¿­ ¿ä¼Ò¿¡ ÀÚ½Ä °ª ³Ö±â=> ¾÷Ä³½ºÆÃ
+		//ë¶€ëª¨ì˜ ê°ì²´ë°°ì—´ ìš”ì†Œì— ìì‹ ê°’ ë„£ê¸°=> ì—…ìºìŠ¤íŒ…
 		shapes[0]=new Rect();
 		shapes[1]=new Circle();
 		shapes[2]=new Line();
@@ -22,16 +20,16 @@ abstract class Shape{
 }
 class Rect extends Shape{
 	void draw() {
-		System.out.println("»ç°¢ÇüÀ» ±×¸®´Ù");
+		System.out.println("ì‚¬ê°í˜•ì„ ê·¸ë¦¬ë‹¤");
 	}
 }
 class Circle extends Shape{
 	void draw() {
-		System.out.println("¿øÀ» ±×¸®´Ù");
+		System.out.println("ì›ì„ ê·¸ë¦¬ë‹¤");
 	}
 }
 class Line extends Shape{
 	void draw() {
-		System.out.println("¼±À» ±×¸®´Ù");
+		System.out.println("ì„ ì„ ê·¸ë¦¬ë‹¤");
 	}
 }
