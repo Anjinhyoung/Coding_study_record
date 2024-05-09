@@ -1,5 +1,3 @@
-package day12;
-
 public class Array_1 {
 	public static void main(String[] args) {
 		// 3명의 학생 점수를 저장하고싶다 100점,80점,70점
