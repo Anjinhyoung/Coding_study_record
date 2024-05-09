@@ -1,5 +1,3 @@
-package day20;
-
 public class Car_practice_2 {
 	public static void main(String[] args) {
 			Car mycar1=new Car();
@@ -9,14 +7,14 @@ public class Car_practice_2 {
 			mycar1.speedUp();
 			mycar2.wiper();
 			
-			System.out.println("mycar1ÀÇ »ö:"+mycar1.color);
-			System.out.println("mycar2ÀÇ »ö:"+mycar2.color);
+			System.out.println("mycar1ì˜ ìƒ‰:"+mycar1.color);
+			System.out.println("mycar2ì˜ ìƒ‰:"+mycar2.color);
 			
-			System.out.println("mycar1ÀÇ ¼Óµµ:"+mycar1.speed);
-			System.out.println("mycar2ÀÇ ¼Óµµ:"+mycar2.speed);
+			System.out.println("mycar1ì˜ ì†ë„:"+mycar1.speed);
+			System.out.println("mycar2ì˜ ì†ë„:"+mycar2.speed);
 			
-			System.out.println("mycar1ÀÇ ¿ÍÀÌÆÛ ÀÛµ¿¿©ºÎ:"+mycar1.wiperOn);
-			System.out.println("mycar2ÀÇ ¿ÍÀÌÆÛ ÀÛµ¿¿©ºÎ:"+mycar2.wiperOn);
+			System.out.println("mycar1ì˜ ì™€ì´í¼ ì‘ë™ì—¬ë¶€:"+mycar1.wiperOn);
+			System.out.println("mycar2ì˜ ì™€ì´í¼ ì‘ë™ì—¬ë¶€:"+mycar2.wiperOn);
 	}
 
 }
