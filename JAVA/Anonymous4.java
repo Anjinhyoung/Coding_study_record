@@ -1,8 +1,6 @@
-package day28;
-
 public class Anonymous4 {
 	public static void main(String[] args) {
-//		Abstract1 ab1 = new Abstract1();  Ãß»óÅ¬·¡½º °´Ã¼ »ı¼º ºÒ°¡
+//		Abstract1 ab1 = new Abstract1();  ì¶”ìƒí´ë˜ìŠ¤ ê°ì²´ ìƒì„± ë¶ˆê°€
 		Abstract1 ab1 = new Abstract1() {
 			void f2() {
 				System.out.println("f2( )");
