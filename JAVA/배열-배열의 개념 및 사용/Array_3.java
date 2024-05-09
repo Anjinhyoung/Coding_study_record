@@ -1,5 +1,3 @@
-package day12;
-
 public class Array_3 {
 	public static void main(String[] args) {
 			int []students= {100,95,90,88,93};
@@ -7,8 +5,8 @@ public class Array_3 {
 			for(int i=0;i<students.length;i++) {
 				sum+=students[i];				
 			}
-			//Á¤¼ö/Á¤¼ö=Á¤¼ö, ½Ç¼ö°ªÀÌ ³ª¿À·Á¸é, Á¤¼ö/(float)½Ç¼ö
-			System.out.println("½ÃÇè Á¡¼öÀÇ Æò±Õ:"+sum/(float)students.length);
+			//ì •ìˆ˜/ì •ìˆ˜=ì •ìˆ˜, ì‹¤ìˆ˜ê°’ì´ ë‚˜ì˜¤ë ¤ë©´, ì •ìˆ˜/(float)ì‹¤ìˆ˜
+			System.out.println("ì‹œí—˜ ì ìˆ˜ì˜ í‰ê· :"+sum/(float)students.length);
 	}
 
 }
