@@ -1,4 +1,4 @@
-public class Interface4 {
+public class Interface3 {
 	public static void main(String[] args) {
 		MyCellPhone phone1=new MyCellPhone();
 		Camera phone2=new MyCellPhone();
