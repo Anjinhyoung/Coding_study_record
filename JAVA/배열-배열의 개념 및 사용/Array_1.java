@@ -1,15 +1,13 @@
-package day12;
-
 public class Array_1 {
 	public static void main(String[] args) {
-		// 3¸íÀÇ ÇĞ»ı Á¡¼ö¸¦ ÀúÀåÇÏ°í½Í´Ù 100Á¡,80Á¡,70Á¡
+		// 3ëª…ì˜ í•™ìƒ ì ìˆ˜ë¥¼ ì €ì¥í•˜ê³ ì‹¶ë‹¤ 100ì ,80ì ,70ì 
 		int scores[] = new int[3];
 		scores[0] = 100;
 		scores[1] = 80;
 		scores[2] = 70;
 
 		for (int i = 0; i < 3; i++) {
-			System.out.println(i + 1 + " ¹øÂ° ÇĞ»ıÀÇ Á¡¼ö:" + scores[i] + "Á¡");
+			System.out.println(i + 1 + " ë²ˆì§¸ í•™ìƒì˜ ì ìˆ˜:" + scores[i] + "ì ");
 		}
 
 	}
