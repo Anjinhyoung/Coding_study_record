@@ -1,6 +1,6 @@
 #include<stdio.h>
 void main() {
-	//1~100±îÁö ¹è¿­¿¡ ´ãÀº ÈÄ È¦¼ö¸¸ Ãâ·Â
+	//1~100ê¹Œì§€ ë°°ì—´ì— ë‹´ì€ í›„ í™€ìˆ˜ë§Œ ì¶œë ¥
 	//int arData[100] = { 0, };
 
 	//for (int i = 0; i < 100; i++) {
@@ -10,7 +10,7 @@ void main() {
 	//	}
 	//}
 
-	//1~100±îÁö ¹è¿­¿¡ ´ãÀº ÈÄ Â¦¼öÀÇ ÇÕ Ãâ·Â
+	//1~100ê¹Œì§€ ë°°ì—´ì— ë‹´ì€ í›„ ì§ìˆ˜ì˜ í•© ì¶œë ¥
 	//int arData[100] = { 0, };
 	//int total = 0;
 
@@ -23,7 +23,7 @@ void main() {
 
 	//printf("%d\n", total);
 
-	//A~F±îÁö Áß C Á¦¿ÜÇÏ°í ¹è¿­¿¡ ´ãÀº ÈÄ Ãâ·Â
+	//A~Fê¹Œì§€ ì¤‘ C ì œì™¸í•˜ê³  ë°°ì—´ì— ë‹´ì€ í›„ ì¶œë ¥
 	//char arData[5] = { ' ', };
 	////0 1 2 3 4
 	////+ 65
@@ -33,14 +33,14 @@ void main() {
 	//	printf("%c ", arData[i]);
 	//}
 
-	//5°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â¹Ş°í ÃÖ´ë°ª°ú ÃÖ¼Ò°ª ±¸ÇÏ±â
+	//5ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ê³  ìµœëŒ€ê°’ê³¼ ìµœì†Œê°’ êµ¬í•˜ê¸°
 	//int arData[5] = { 0, };
 
 	//int max = 0;
 	//int min = 0;
 
 	//for (int i = 0; i < 5; i++) {
-	//	printf("%d¹øÂ° Á¤¼ö : ", i + 1);
+	//	printf("%dë²ˆì§¸ ì •ìˆ˜ : ", i + 1);
 	//	scanf_s("%d", arData + i);
 	//}
 	//max = arData[0];
@@ -51,9 +51,9 @@ void main() {
 	//	if (min > arData[i]) { min = arData[i]; }
 	//}
 
-	//printf("ÃÖ´ë°ª : %d\nÃÖ¼Ò°ª : %d", max, min);
+	//printf("ìµœëŒ€ê°’ : %d\nìµœì†Œê°’ : %d", max, min);
 
-	//aBcDeFgHiJkLmNoPqRsTuVwXyZ ¹è¿­¿¡ ´ã±â
+	//aBcDeFgHiJkLmNoPqRsTuVwXyZ ë°°ì—´ì— ë‹´ê¸°
 	char arData[26] = { ' ', };
 	for (int i = 0; i < 26; i++) {
 		arData[i] = i % 2 == 0 ? 97 + i : 65 + i;
