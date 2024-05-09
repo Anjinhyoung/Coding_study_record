@@ -1,9 +1,7 @@
-package day20;
-
 public class FirstClass {
 	public static void main(String[] args) {
-		//ÀÚ·áÇü º¯¼ö= °´Ã¼°ª;
-		//Å¬·¡½º¸í ÂüÁ¶º¯¼ö = new Å¬·¡½º¸í();
+		//ìë£Œí˜• ë³€ìˆ˜= ê°ì²´ê°’;
+		//í´ë˜ìŠ¤ëª… ì°¸ì¡°ë³€ìˆ˜ = new í´ë˜ìŠ¤ëª…();
 		ClassA ca= new ClassA();
 		System.out.println(ca.x);
 		ca.f1();
