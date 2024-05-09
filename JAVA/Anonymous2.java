@@ -1,4 +1,3 @@
-
 public class Anonymous2 {
 	public static void main(String[] args) {
 		OuterClass1 o = new OuterClass1() {
