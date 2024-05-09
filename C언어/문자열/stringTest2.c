@@ -1,9 +1,9 @@
 #include<stdio.h>
 void main() {
-	// "" : ºó ¹®ÀÚ¿­
+	// "" : ë¹ˆ ë¬¸ìì—´
 	char fruit[6] = "";
-	printf("°úÀÏ ÀÌ¸§ : ");
+	printf("ê³¼ì¼ ì´ë¦„ : ");
 	scanf_s("%s", fruit, sizeof(fruit));
 
-	printf("%s´Â ¸ÀÀÖ¾î!", fruit);
+	printf("%sëŠ” ë§›ìˆì–´!", fruit);
 }
