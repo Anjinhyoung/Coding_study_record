@@ -1,80 +1,78 @@
-package day16;
-
 import java.util.Scanner;
 
 public class Cafe {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int count = 0;
-		// ÁÖ¹®Àº ÃÑ 5°³±îÁö °¡´É
+		// ì£¼ë¬¸ì€ ì´ 5ê°œê¹Œì§€ ê°€ëŠ¥
 		String orderList[] = new String[5];
 		int total = 0;
 		while (true) {
-			System.out.println("¡Ù¡Ú¡Ù¡Ú Cafe ¡Ù¡Ú¡Ù¡Ú");
-			System.out.println("1. ÁÖ¹®ÇÏ±â");
-			System.out.println("2. Ãë¼ÒÇÏ±â");
-			System.out.println("3. °áÁ¦ÇÏ±â");
-			System.out.println("4. ³¡³»±â");
-			System.out.print("ÀÔ·Â:");
+			System.out.println("â˜†â˜…â˜†â˜… Cafe â˜†â˜…â˜†â˜…");
+			System.out.println("1. ì£¼ë¬¸í•˜ê¸°");
+			System.out.println("2. ì·¨ì†Œí•˜ê¸°");
+			System.out.println("3. ê²°ì œí•˜ê¸°");
+			System.out.println("4. ëë‚´ê¸°");
+			System.out.print("ì…ë ¥:");
 			int num=sc.nextInt();
 			if(num==1) {
 				String menuName="";
 				int menuPrice=0;
-				System.out.println("1. ¾Æ¸Ş¸®Ä«³ë\t3800¿ø");
-				System.out.println("2. ¿¡½ºÇÁ·¹¼Ò\t2400¿ø");
-				System.out.println("3. Ä«Æä¶ó¶¼\t4200¿ø");
-				System.out.println("4. ¹ĞÅ©Æ¼\t\t5100¿ø");
-				System.out.print("ÁÖ¹®ÇÒ ¸Ş´º¹øÈ£:");
+				System.out.println("1. ì•„ë©”ë¦¬ì¹´ë…¸\t3800ì›");
+				System.out.println("2. ì—ìŠ¤í”„ë ˆì†Œ\t2400ì›");
+				System.out.println("3. ì¹´í˜ë¼ë–¼\t4200ì›");
+				System.out.println("4. ë°€í¬í‹°\t\t5100ì›");
+				System.out.print("ì£¼ë¬¸í•  ë©”ë‰´ë²ˆí˜¸:");
 				int menuNum=sc.nextInt();
 				if(menuNum==1) {
-					menuName="¾Æ¸Ş¸®Ä«³ë";
+					menuName="ì•„ë©”ë¦¬ì¹´ë…¸";
 					menuPrice=3800;
 				}
 				else if(menuNum==2) {
-					menuName="¿¡½ºÇÁ·¹¼Ò";
+					menuName="ì—ìŠ¤í”„ë ˆì†Œ";
 					menuPrice=2400;
 				}
 				else if(menuNum==3) {
-					menuName="Ä«Æä¶ó¶¼";
+					menuName="ì¹´í˜ë¼ë–¼";
 					menuPrice=4200;
 				}
 				else if(menuNum==4) {
-					menuName="¹ĞÅ©Æ¼";
+					menuName="ë°€í¬í‹°";
 					menuPrice=5100;
 				}
 				else {
-					System.out.println("Àß¸øÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+					System.out.println("ì˜ëª»ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
 					continue;
 				}
 				total+=menuPrice;
 				orderList[count]=menuName;
 				count++;
-				System.out.println("ÁÖ¹®ÇÑ ¸Ş´º´Â "+menuName+"ÀÔ´Ï´Ù.");
-				System.out.println("°¡°İÀº "+menuPrice+"¿ø ÀÔ´Ï´Ù.");
+				System.out.println("ì£¼ë¬¸í•œ ë©”ë‰´ëŠ” "+menuName+"ì…ë‹ˆë‹¤.");
+				System.out.println("ê°€ê²©ì€ "+menuPrice+"ì› ì…ë‹ˆë‹¤.");
 			}
 			else if(num==2) {
-				System.out.println("---ÁÖ¹®ÇÑ ¸Ş´º ¸®½ºÆ®---");
+				System.out.println("---ì£¼ë¬¸í•œ ë©”ë‰´ ë¦¬ìŠ¤íŠ¸---");
 				for(int i=0;i<count;i++) {
 					System.out.println(i+1+"."+orderList[i]);
 				}
-				System.out.print("Ãë¼ÒÇÒ ¸Ş´º¹øÈ£:");
+				System.out.print("ì·¨ì†Œí•  ë©”ë‰´ë²ˆí˜¸:");
 				int cancelNum=sc.nextInt();
 				if(1<=cancelNum && cancelNum<=count) {
 					String delMenu= orderList[cancelNum-1];
-					System.out.println(delMenu+"¸Ş´º »èÁ¦!");
+					System.out.println(delMenu+"ë©”ë‰´ ì‚­ì œ!");
 					for(int i=cancelNum-1;i<count;i++) {
 						orderList[i]=orderList[i+1];
 					}
-					if(delMenu.equals("¾Æ¸Ş¸®Ä«³ë")) {
+					if(delMenu.equals("ì•„ë©”ë¦¬ì¹´ë…¸")) {
 						total-=3800;
 					}
-					else if(delMenu.equals("¿¡½ºÇÁ·¹¼Ò")) {
+					else if(delMenu.equals("ì—ìŠ¤í”„ë ˆì†Œ")) {
 						total-=2400;	}
 						
-					else if(delMenu.equals("Ä«Æä¶ó¶¼")) {
+					else if(delMenu.equals("ì¹´í˜ë¼ë–¼")) {
 						total-=4200;
 					}
-					else if(delMenu.equals("¹ĞÅ©Æ¼")) {
+					else if(delMenu.equals("ë°€í¬í‹°")) {
 						total-=5100;
 					}
 					count--;
@@ -82,15 +80,15 @@ public class Cafe {
 				
 			}
 			else if(num==3) {
-				System.out.println("°áÁ¦ÇÒ ±İ¾×:"+total+"¿ø");
-				System.out.print("ÁöºÒÇÒ ±İ¾×:");
+				System.out.println("ê²°ì œí•  ê¸ˆì•¡:"+total+"ì›");
+				System.out.print("ì§€ë¶ˆí•  ê¸ˆì•¡:");
 				int money=sc.nextInt();
 				if(money<total) {
-					System.out.println("ÀÜµ·ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
+					System.out.println("ì”ëˆì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
 					continue;
 				}
 				else {
-					System.out.println("ÀÜµ·Àº "+(money-total)+"¿øÀÔ´Ï´Ù.");
+					System.out.println("ì”ëˆì€ "+(money-total)+"ì›ì…ë‹ˆë‹¤.");
 					total=0;
 					for(int i=0;i<5;i++) {
 						orderList[i]="";
@@ -99,11 +97,11 @@ public class Cafe {
 				}
 			}
 			else if(num==4) {
-				System.out.println("¹İº¹Á¾·á!");
+				System.out.println("ë°˜ë³µì¢…ë£Œ!");
 				break;
 			}
 			else {
-				System.out.println("Àß¸øÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+				System.out.println("ì˜ëª»ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
 			}
 			
 		}
