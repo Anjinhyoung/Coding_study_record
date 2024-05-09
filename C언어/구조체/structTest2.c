@@ -12,17 +12,17 @@ typedef struct Fruit {
 void main() {
 	F* fruits = 0;
 	int size = 0;
-	printf("ÀÔ·ÂÇÏ½Ç °úÀÏÀÇ °³¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä\n");
+	printf("ì…ë ¥í•˜ì‹¤ ê³¼ì¼ì˜ ê°œìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”\n");
 	scanf_s("%d", &size);
 
 	fruits = (F*)calloc(size, sizeof(F));
 	
 	for (int i = 0; i < size; i++) {
-		printf("%d¹øÂ° °úÀÏ¸í : ", i+1);
+		printf("%dë²ˆì§¸ ê³¼ì¼ëª… : ", i+1);
 		scanf_s("%s", fruits->name, sizeof(fruits->name));
-		printf("%s °¡°İ", fruits->name);
+		printf("%s ê°€ê²©", fruits->name);
 		scanf_s("%d", &fruits[i].price);
-		printf("%s ½ÃÁğ", fruits->name);
+		printf("%s ì‹œì¦Œ", fruits->name);
 		scanf_s("%s", fruits->season, sizeof(fruits->season));
 
 		printf("%s, %d, %s\n", fruits->name, fruits[i].price, fruits->season);
@@ -30,18 +30,18 @@ void main() {
 
 
 	//F fruits[L] = {
-	//	{ "»ç°ú", 1500, "°¡À»" },
-	//	{ "¹è", 3500, "°Ü¿ï" },
-	//	{ "¹Ù³ª³ª", 500, "¿©¸§" }
+	//	{ "ì‚¬ê³¼", 1500, "ê°€ì„" },
+	//	{ "ë°°", 3500, "ê²¨ìš¸" },
+	//	{ "ë°”ë‚˜ë‚˜", 500, "ì—¬ë¦„" }
 	//};
 
 	//for (int i = 0; i < L; i++) {
 	//	printf("%s, %d, %s\n", fruits[i].name, fruits[i].price, fruits[i].season);
 	//}
 
-	//F apple = { "»ç°ú", 1500, "°¡À»" };
-	//F pear = { "¹è", 3500, "°Ü¿ï" };
-	//F banana = { "¹Ù³ª³ª", 500, "¿©¸§" };
+	//F apple = { "ì‚¬ê³¼", 1500, "ê°€ì„" };
+	//F pear = { "ë°°", 3500, "ê²¨ìš¸" };
+	//F banana = { "ë°”ë‚˜ë‚˜", 500, "ì—¬ë¦„" };
 
 	//printf("%s, %d, %s\n", apple.name, apple.price, apple.season);
 	//printf("%s, %d, %s\n", pear.name, pear.price, pear.season);
