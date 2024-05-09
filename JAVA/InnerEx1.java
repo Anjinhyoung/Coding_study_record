@@ -1,5 +1,3 @@
-package day28;
-
 public class InnerEx1 {
 	public static void main(String[] args) {
 
@@ -18,7 +16,7 @@ class A{
 	
 	static void StaticMethod() {
 		StaticInner st2=new StaticInner();
-//		InstanceInner ii2=new InstanceInner(); ¿À·ù¹ß»ý
+//		InstanceInner ii2=new InstanceInner(); Â¿Ã€Â·Ã¹Â¹ÃŸÂ»Ã½
 	}
 	void InstanceMethod(){
 		StaticInner  st3=new StaticInner();
