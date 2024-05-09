@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<string.h>
 void main() {
-	char title[20] = "¢ÍDS Cafe¢Í";
-	char menu[100] = "¨çÃß°¡ÇÏ±â\n¨è¼öÁ¤ÇÏ±â\n¨é°Ë»öÇÏ±â\n¨ê»èÁ¦ÇÏ±â\n¨ë¸ñ·Ïº¸±â\n¨ì³ª°¡±â";
-	//¸Ş´º ÀÌ¸§, ¸Ş´º °¡°İ
+	char title[20] = "â™¨DS Cafeâ™¨";
+	char menu[100] = "â‘ ì¶”ê°€í•˜ê¸°\nâ‘¡ìˆ˜ì •í•˜ê¸°\nâ‘¢ê²€ìƒ‰í•˜ê¸°\nâ‘£ì‚­ì œí•˜ê¸°\nâ‘¤ëª©ë¡ë³´ê¸°\nâ‘¥ë‚˜ê°€ê¸°";
+	//ë©”ë‰´ ì´ë¦„, ë©”ë‰´ ê°€ê²©
 	char arName[200][100] = { "", };
 	char temp[100] = "";
 	int arPrice[200] = { 0, };
@@ -17,8 +17,8 @@ void main() {
 		if (choice == 6) { break; }
 
 		switch (choice) {
-		case 1://Ãß°¡ÇÏ±â
-			printf("¸Ş´º ÀÌ¸§ : ");
+		case 1://ì¶”ê°€í•˜ê¸°
+			printf("ë©”ë‰´ ì´ë¦„ : ");
 			scanf_s("%s", temp, sizeof(temp));
 			isDup = 0;
 			for (int i = 0; i < cnt; i++) {
@@ -29,22 +29,22 @@ void main() {
 			}
 			
 			if (!isDup) {
-				printf("¸Ş´º °¡°İ : ");
+				printf("ë©”ë‰´ ê°€ê²© : ");
 				scanf_s("%d", arPrice + cnt);
 				strcpy_s(arName[cnt], sizeof(arName[cnt]), temp);
 				cnt++;
 			}
 			else {
-				printf("ÀÌ¹Ì Á¸ÀçÇÏ´Â »óÇ°ÀÔ´Ï´Ù.");
+				printf("ì´ë¯¸ ì¡´ì¬í•˜ëŠ” ìƒí’ˆì…ë‹ˆë‹¤.");
 			}
 			break;
-		case 2://¼öÁ¤ÇÏ±â
+		case 2://ìˆ˜ì •í•˜ê¸°
 			break;
-		case 3://°Ë»öÇÏ±â
+		case 3://ê²€ìƒ‰í•˜ê¸°
 			break;
-		case 4://»èÁ¦ÇÏ±â
+		case 4://ì‚­ì œí•˜ê¸°
 			break;
-		case 5://¸ñ·Ïº¸±â
+		case 5://ëª©ë¡ë³´ê¸°
 			break;
 		}
 
