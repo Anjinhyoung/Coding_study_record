@@ -1,5 +1,3 @@
-package day15;
-
 import java.util.Scanner;
 
 public class Fruit {
@@ -7,10 +5,10 @@ public class Fruit {
 		Scanner sc = new Scanner(System.in);
 		String fruits[]=new String[3];
 		for(int i=0;i<3;i++) {
-			System.out.print("ÁÖ¹®ÇÒ °úÀÏ:");
+			System.out.print("ì£¼ë¬¸í•  ê³¼ì¼:");
 			fruits[i]=sc.next();
 		}
-		System.out.println("---ÁÖ¹®¹ÞÀº °úÀÏ---");
+		System.out.println("---ì£¼ë¬¸ë°›ì€ ê³¼ì¼---");
 		for(String eachFruit:fruits) {
 			System.out.print(eachFruit+" ");
 		}
