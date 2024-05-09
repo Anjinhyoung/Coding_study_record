@@ -1,5 +1,3 @@
-package day27;
-
 public class Interface3 {
 	public static void main(String[] args) {
 		TourGuide guide=new TourGuide();
@@ -16,29 +14,29 @@ interface Providable{
 class KoreaTour implements Providable{
 	@Override
 	public void leisureSports() {
-		System.out.println("ÇÑ°­¿¡¼­ ¼ö»ó½ºÅ° Åõ¾î");
+		System.out.println("í•œê°•ì—ì„œ ìˆ˜ìƒìŠ¤í‚¤ íˆ¬ì–´");
 	}
 	@Override
 	public void sightseeing() {
-		System.out.println("°æº¹±Ã °ü¶÷ Åõ¾î");
+		System.out.println("ê²½ë³µê¶ ê´€ëŒ íˆ¬ì–´");
 	}
 	@Override
 	public void food() {
-		System.out.println("ÀüÁÖ ºñºö¹ä Åõ¾î");
+		System.out.println("ì „ì£¼ ë¹„ë¹”ë°¥ íˆ¬ì–´");
 	}
 }
 class JapanTour implements Providable{
 	@Override
 	public void leisureSports() {
-		System.out.println("µµÄì Å¸¿ö ¹øÁöÁ¡ÇÁ Åõ¾î");
+		System.out.println("ë„ì¿„ íƒ€ì›Œ ë²ˆì§€ì í”„ íˆ¬ì–´");
 	}
 	@Override
 	public void sightseeing() {
-		System.out.println("¿À»çÄ« °ü¶÷ Åõ¾î");
+		System.out.println("ì˜¤ì‚¬ì¹´ ê´€ëŒ íˆ¬ì–´");
 	}
 	@Override
 	public void food() {
-		System.out.println("ÃÊ¹ä Åõ¾î");
+		System.out.println("ì´ˆë°¥ íˆ¬ì–´");
 	}}
 
 class TourGuide{
