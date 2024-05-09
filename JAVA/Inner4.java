@@ -1,19 +1,17 @@
-package day28;
-
 public class Inner4 {
 	public static void main(String[] args) {
 		OuterClass oc = new OuterClass();
-		System.out.println("OuterClassÀÇ a °ª: "+oc.a);
-		System.out.println("OuterClassÀÇ b °ª: "+OuterClass.b);
+		System.out.println("OuterClassì˜ a ê°’: "+oc.a);
+		System.out.println("OuterClassì˜ b ê°’: "+OuterClass.b);
 		
-		System.out.println("===inner Å¬·¡½º Á¢±ÙÇÏ±â===");
+		System.out.println("===inner í´ë˜ìŠ¤ ì ‘ê·¼í•˜ê¸°===");
 		OuterClass oc2 = new OuterClass();
 		OuterClass.Inner i = oc2.new Inner();
-		System.out.println("InnerÀÇ c °ª: "+i.c);
+		System.out.println("Innerì˜ c ê°’: "+i.c);
 		i.InnerMethod();
 		
 		OuterClass.StaticInner si = new OuterClass.StaticInner();
-		System.out.println("StaticInnerÀÇ d °ª: "+si.d);
+		System.out.println("StaticInnerì˜ d ê°’: "+si.d);
 		
 		si.staticMethod();
 		OuterClass.StaticInner.staticMethod();
