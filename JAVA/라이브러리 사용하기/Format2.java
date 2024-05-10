@@ -1,5 +1,3 @@
-package day33;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
