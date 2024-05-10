@@ -1,5 +1,3 @@
-package day34;
-
 import java.util.Timer;
 import java.util.TimerTask;
 
