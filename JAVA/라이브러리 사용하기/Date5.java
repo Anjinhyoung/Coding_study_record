@@ -1,5 +1,3 @@
-package day33;
-
 import java.util.Date;
 
 public class Date5 {
