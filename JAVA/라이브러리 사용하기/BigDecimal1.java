@@ -1,4 +1,3 @@
-package day35;
 
 import java.math.BigDecimal;
 
