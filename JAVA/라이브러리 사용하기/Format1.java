@@ -1,5 +1,3 @@
-package day35;
-
 import java.text.DecimalFormat;
 
 public class Format1 {
