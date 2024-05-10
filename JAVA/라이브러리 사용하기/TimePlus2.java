@@ -1,5 +1,3 @@
-package day34;
-
 import java.time.LocalDateTime;
 
 public class TimePlus2 {
