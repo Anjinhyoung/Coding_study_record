@@ -1,5 +1,3 @@
-package day33;
-
 import java.util.Calendar;
 
 public class Date4 {
