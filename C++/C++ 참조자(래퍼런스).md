@@ -76,3 +76,37 @@ int main() {
 5
 3
 ```
+  * 위 코드는 포인트를 사용해서 number를 change_val 안에 전달한 코드를 참조자를 이용해서 바꿔본 것입니다.
+  * 근데 int& p는 안 된다고 배웠는데 가능하게 되네요?
+  * 사실 p가 정의되는 순간은 change_vale(number)로 호출할 때 이므로 사실상 int& p = number가 실행된다고 생각하면 됩니다.
+  * p 에게 너는 앞으로 number 의 새로운 별명이야 라고 알려주게 됩니다.
+  * 여기서 중요한 점은 포인터가 인자일 때와는 다르게 number 앞에 & 를 붙일 필요가 없다는 점입니다.
+  * 이는 참조자를 정의할 때 그냥 int& a = b 와 같이 한 것과 일맥상통합니다.
+
+```C++
+// 참조자 이해하기
+
+#include <iostream>
+
+int main() {
+  int x;
+  int& y = x;
+  int& z = y;
+
+  x = 1;
+  std::cout << "x : " << x << " y : " << y << " z : " << z << std::endl;
+
+  y = 2;
+  std::cout << "x : " << x << " y : " << y << " z : " << z << std::endl;
+
+  z = 3;
+  std::cout << "x : " << x << " y : " << y << " z : " << z << std::endl;
+}
+
+출력 결과
+
+x : 1 y : 1 z : 1
+x : 2 y : 2 z : 2
+x : 3 y : 3 z : 3
+
+```
