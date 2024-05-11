@@ -1,5 +1,3 @@
-package day36;
-
 public class TypeSearch {
 	public static void main(String[] args) {
 		Value v= new Value();
