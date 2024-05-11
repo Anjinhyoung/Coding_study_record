@@ -1,5 +1,3 @@
-package day37;
-
 import java.util.ArrayList;
 
 public class ArrayList1 {
