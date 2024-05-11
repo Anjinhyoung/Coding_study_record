@@ -1,5 +1,3 @@
-package day36;
-
 public class Generic2 {
 	public static void main(String[] args) {
 			A<Integer> a1 =new A<Integer>();
