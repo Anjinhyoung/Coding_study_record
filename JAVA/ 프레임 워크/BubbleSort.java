@@ -1,5 +1,3 @@
-package day41;
-
 public class BubbleSort {
 	public static void main(String[] args) {
 			int ar[]= {6,4,7,9,1};
