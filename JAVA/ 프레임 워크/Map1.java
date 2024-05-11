@@ -1,5 +1,3 @@
-package day39;
-
 import java.util.HashMap;
 import java.util.Scanner;
 
