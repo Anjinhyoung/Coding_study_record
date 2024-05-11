@@ -1,5 +1,3 @@
-package day38;
-
 import java.util.Stack;
 
 public class StackEx {
