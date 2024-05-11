@@ -1,6 +1,3 @@
-package day41;
-
-
 public class SelectionSort {
 	public static void main(String[] args) {
 		int ar[]= {8,1,2,5,4,3,6,7};
