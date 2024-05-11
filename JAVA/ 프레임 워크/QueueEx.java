@@ -1,5 +1,3 @@
-package day38;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
