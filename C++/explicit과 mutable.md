@@ -210,3 +210,7 @@ data: 3
   * 위 처럼 data_ 의 값이 const 함수 안에서 바뀐 것을 알 수 있습니다.
 ```
 
+
+
+# 출처
+  * 사이트: 모두의 코드, 페이지: 클래스의 explicit 과 mutable 키워드 , 사이트: https://modoocode.com/253
