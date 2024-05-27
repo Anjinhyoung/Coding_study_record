@@ -65,3 +65,7 @@ array size : 5
   * list에 new 를 이용하여 크기가 arr_size인 int 배열을 생성하였습니다. 배열을 생성할 때
   * []를 이용해 배열의 크기를 넣어주면 된다.
   * 마지막으로 delete[]를 통해서 해제하면 됩니다. 즉 new - delete가 짝을 이루고 new[] - delete[]가 짝을 이루는 것이지요
+
+
+# 출처
+  * 사이트: 모두의 코드, 페이지: C++ 의 세계로 오신 것을 환영합니다. (new, delete) , 사이트: https://modoocode.com/169
