@@ -67,3 +67,12 @@ namespace HelloWorld
  * C#에서 Main 메서드는 진입점(entry point)으로서 반드시 정적 메서드여야 한다.
  * 프로그램이 시작될 때 클래스의 인스턴스 없이 실행되어야 하기 때문에
  * **static**을 붙여줘야 한다.
+ * 솔직히 24년 6월 22일에 이 글을 작성하고 있는데 **string[] args** 에 대해 검색해봤지만 이해가 아직 안 됐다 ㅠㅠ
+ * 이해되면 반드시 적겠다.
+ * 그런 다음 오늘의 마지막 출력문 적기
+
+```C#
+Console.WriteLine("Hello World!"); // 위에 using System이 있다고 가정하고
+```
+ * 이 구문은 python에서 **print()** 같은 거고 C++에서는 **std::cout** 같이 C#의 기본 출력 코드이다.
+ * Console.WriteLine()
