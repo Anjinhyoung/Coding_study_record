@@ -32,7 +32,7 @@ int main() {
 }
 
 ```
-  * 이런 식으로 C++의 using namespace를 사용해서 귀찮은 **std::**를 안 쓰듯이 할 수 있게 해준다.
+  * 이런 식으로 C++의 using namespace를 사용해서 귀찮은 'std::'를 안 쓰듯이 할 수 있게 해준다.
   * 만약에 **using System**이 없다면?
 
 ```C#
