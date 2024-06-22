@@ -20,7 +20,7 @@ namespace HelloWorld
 using System
 ```
   * C#에서 using System은 'System'의 이름공간을 사용하겠다는 선언이다.
-  * 이 개념은 C++이랑 비슷하다.
+  * 이 개념은 C++이랑 비슷하다. like #include
 
 ```C++
 #include <iostream>
