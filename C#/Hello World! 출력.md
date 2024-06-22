@@ -52,6 +52,7 @@ namespace HelloWorld
 ```C#
 namespace HelloWorld
 ```
-  * 다음은 namespace HelloWorld인데
-  * 
+  * 다음은 **namespace**인데
+  * namespace는 **성격이나 하는 일에 따라 클래스, 메소드 등을 하나의 이름으로 묶어 두는 것**이다.
+  * 사실 이 부분은 내가 아직 이해를 제대로 하지를 못해서 지금은 뭐라 설명을 못 하겠다;; 나중에 이해하면 다시 적도록 한다.
   
