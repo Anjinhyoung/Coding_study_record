@@ -135,3 +135,35 @@ namespace Practice
         Friday     // 502
     } 
    ```   
+
+# enum 사용법 3
+
+```C#
+출력 방법
+
+using System;
+
+
+namespace Practice
+{
+
+    internal class Program
+    {
+        enum Color
+        {
+            RED = 100,
+            GREEN, // 101
+            BLUE // 102
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine($"{Color.RED}"); // 출력값: RED
+            Console.WriteLine($"{(int)Color.BLUE}"); // 출력값: 102
+        }
+    }
+}
+```
+ * **Console.WriteLine($"{Color.RED}");** 이런 식으로 출력하면 단순히  enum의 멤버 이름을 나타내며
+ * 출력에서는 해당 멤버의 값이 아니라 멤버의 이름 자체를 출력한다.
+ * 그러므로 반드시 멤버의 값을 출력할려면 형 변환을 해줘야 한다.
