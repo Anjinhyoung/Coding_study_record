@@ -42,12 +42,21 @@ numFVar:0.01
   ```
   * C#에서는 var을 사용할 때 컴파일러가 초기화식의 타입을 기반으로 변수의 타입을 추론
   * 그러나 'null'은 타입을 정확히 추론을 할 수가 없어 var이랑 같이 사용할 수 없다.
-  ##### 2-1. null의 사용법
+  ### 2-1. null의 사용법
   ```C#
 
 int? nullableInt = null;
 double? nullableDouble = null;
   ```
+
+  ### 2-2. null의 사용법2
+  ```C#
+int? num = null;
+double? dNum = 100.01;
+```
+  * 타입 옆에 '?'를 붙이면 꼭 null 값만 넣을 수 있는 게 아니다. 그 타입에 맞는 값도 넣을 수 있다.
+  * 다만 주의할 점은 타입 옆에 '?'로 설정한 변수를 다른 변수에 대입할 경우 **double DNUM  =  (dobule)dNum** 이렇게 명시적으로 형 변환을 해줘야 한다.
+
 
 
   ### 3. Only 지역 변수로만
