@@ -61,7 +61,38 @@ string example = "Hello, world!";
 string result = example.Substring(7, 5);
 
 result는 "world" (인덱스 7부터 5글자의 문자열을 반환)
+```
 
+
+
+# Trim
+ * C#에서 문자열의 앞뒤에 있는 공백 문자를 제거하는데 사용되는 메서드
+
+
+```C#
+기본 Trim
+
+string example = " Hello, world! ";
+string result = example.Trim();
+
+result "Hello, world!" (앞뒤 공백이 제거됨)
+```
+
+```C#
+TrimStart
+
+string example =  " Hello, world! ";
+string result = example.TrimStart();
+
+result는 "Hello, world! " (앞쪽 공백만 제거됨)
+```
+
+```C#
+특정 문자 집합을 지정하여 제거
+
+string example = "---Hello, world!---";
+char[] charsToTrim = {'-'};
+string result = example.Trim(charsToTrim);
 
 
 
