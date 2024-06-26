@@ -120,7 +120,6 @@ public struct sBook
     public string author;
 }
 
-// 사용 예시
 sBook[] arrayBooks = new sBook[3];
 
 arrayBooks[0].id = 0;
@@ -129,6 +128,8 @@ arrayBooks[0].author = "aaa";
 ```
 
 ```C#
+객체 초기화를 이용한 초기화
+
 public struct MyPoint
 {
     public int x;
