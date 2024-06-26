@@ -62,3 +62,36 @@ method call: 10
 method: 20
 method call: 20
 ```
+
+
+# ref vs out
+ ## ref
+  1. 변수 초기화: **ref**를 사용하여 전달되는 변수는 함수 호출 전에 반드시 **초기화**되어 있어야 한다.
+  2. 값의 전달 및 반환: **ref**를 사용하면 함수 내에서 전달된 변수의 값을 읽고 수정할 수 있다. 함수가 반환할 때 전달된 변수의 값이 수정될 수 있다.
+
+ ## out
+  1. 변수 초기화: **out**을 사용하여 전달되는 변수는 함수 호출 전에 초기화될 필요가 없다. 함수 내에서 반드시 초기화되어야 한다.
+  2. 값의 전달 및 반환: **out**을 사용하면 함수 내에서 변수에 값을 할당하여 반환할 수 있다. 함수가 반환할 때 변수의 값이 초기화되어야 한다.
+
+```C#
+out 사용법
+
+using System;
+
+class Program
+{
+    static void ModifyValue(out int value)
+    {
+        value = 20;
+        Console.WriteLine($"Inside method: {value}");
+    }
+
+    static void Main()
+    {
+        int originalValue;
+        ModifyValue(out originalValue);
+        
+        Console.WriteLine($"After method call: {originalValue}");
+    }
+}
+```
