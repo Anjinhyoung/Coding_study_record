@@ -64,3 +64,30 @@ else
 {
     Console.WriteLine("oBase 캐스팅 불가");
 }
+```
+
+```C#
+또다른 예시
+
+class Base {}
+class Derived : Base {}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Base baseObj = new Derived(); // Derived 객체를 Base 타입으로 참조
+
+        // baseObj를 Derived 타입으로 캐스팅 시도
+        Derived derivedObj = baseObj as Derived;
+        if (derivedObj != null)
+        {
+            Console.WriteLine("baseObj는 Derived 타입으로 캐스팅 성공");
+        }
+        else
+        {
+            Console.WriteLine("baseObj는 Derived 타입으로 캐스팅 실패");
+        }
+    }
+}
+```
