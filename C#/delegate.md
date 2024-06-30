@@ -78,7 +78,27 @@ dPrint1();
   * 하지만 Combine을 사용하면 더 간단하게 할 수 있다.
 
 ```C#
+멀티 캐스트 Combine 방법 1
+
 DelegatePrint combineDelegate = (DelegatePrint)Delegate.Combine(new DelegatePrint[] {PrintValue, PrintHello, PrintValue});
 combineDelegate();
 ```
+ * (DelegatePrint)로 캐스팅 변환하는 이유는 Delegate.Combine이 반환하는 타입이 System.Delegate 타입이기 때문이다.
+ *  C#에서는 이 반환된 delegate를 다시 원래의 delegate 타입으로 캐스팅해야 제대로 사용할 수 있다.
 
+```C#
+멀티 캐스트 Combine 방법 2
+
+DelegatePrint aa = PrintHello;
+DelegatePrint bb = PrintValue;
+DelegatePrint cc = PrintHello;
+
+DelegatePrint combineDelegate2 = (DelegatePrint)Delegate.Combine(aa, bb, cc);
+combineDelegate2();
+```
+
+```C#
+멀티 캐스트 Remove 방법
+DelegatePrint combineDelegate3 = (DelegatePrint)Delegate.Remove(combineDelegate,bb);
+combineDelegate3();
+```
