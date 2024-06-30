@@ -99,6 +99,7 @@ combineDelegate2();
 
 ```C#
 멀티 캐스트 Remove 방법
+
 DelegatePrint combineDelegate3 = (DelegatePrint)Delegate.Remove(combineDelegate,bb);
 combineDelegate3();
 ```
