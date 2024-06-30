@@ -62,104 +62,23 @@ static void PrintSum(int a, int b)
 delegate void DelegatePrintSum(int a, int b); 이런 식으로 
 ```
 
-# 전체 코드
+# Combine, Remove
+  * **Combine, Remove**은 보통 delegate와 관련된 작업에서 사용되는 메서드로 여러 개의 delegate르 하나로 결합하거나
+  * 결합을 해제하는 데 사용된다. 이를 통해 여러 메서드를 호출하는 multicast delegate를 만들 수 있다.
+  * 다음 예시를 보자
+
 ```C#
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _039_Method_delegate
-{
-    class Program
-    {
-        delegate void DelegatePrint();
-
-        static void PrintHello()
-        {
-            Console.WriteLine("PrintHello");
-        }
-
-        static void PrintValue()
-        {
-            Console.WriteLine("PrintValue");
-        }
-
-        delegate void DelegatePrintSum(int a, int b);
-        static void PrintSum(int a, int b)
-        {
-            Console.WriteLine("PrintSum: " + (a + b));
-        }
-
-        static void TestDelegate(int a, int b, DelegatePrintSum dSum)
-        {
-            Console.WriteLine("a: " + a + "  b: " + b);
-
-            if (dSum != null)
-            {
-                Console.Write("TestDelegate ");
-                dSum(a, b);
-            }
-        }
-
-        static void Main(string[] args)
-        {
-            {
-                //int num
-                DelegatePrint dPrint = null;
-                dPrint = PrintHello;
-                dPrint();
-
-                dPrint = PrintValue;
-                dPrint();
-            }
-
-            {
-                Console.WriteLine("멀티 캐스트 +=");
-
-                DelegatePrint dPrint1 = PrintHello;
-                dPrint1 += PrintValue;
-                dPrint1 += PrintHello;
-                dPrint1 += PrintHello;
-                dPrint1();
-
-                Console.WriteLine("멀티 캐스트 -=");
-                dPrint1 -= PrintValue;
-                dPrint1();
-            }
-
-            {
-                Console.WriteLine("멀티 캐스트 Combine");
-                DelegatePrint combineDelegate = (DelegatePrint)Delegate.Combine(new DelegatePrint[] { PrintValue, PrintHello, PrintValue });
-                combineDelegate();
-
-                Console.WriteLine("멀티 캐스트 Combine2");
-                DelegatePrint aa = PrintHello;
-                DelegatePrint bb = PrintValue;
-                DelegatePrint cc = PrintHello;
-
-                DelegatePrint combineDelegate2 = (DelegatePrint)Delegate.Combine(aa, bb, cc);
-                combineDelegate2();
-
-                Console.WriteLine("멀티 캐스트 Remove");
-                DelegatePrint combineDelegate3 = (DelegatePrint)Delegate.Remove(combineDelegate2, bb);
-                combineDelegate3();
-            }
-
-            DelegatePrintSum dPrintSum = PrintSum;
-            dPrintSum(10, 10);
-
-            {
-                void Sum(int a, int b)
-                {
-                    Console.Write("Sum:" + (a + b));
-                }
-
-                TestDelegate(10, 20, Sum);
-            }
-        }
-    }
-}
-
+DelegatePrint dPrint1 = PrintHello;
+dPrint1 += PrintValue;
+dPrint1 += PrintHello;
+dPrint1 += PrintHello;
+dPrint1();
 ```
+  * 이런 식으로 **+=** 연산자를 이용하여 여러 메서드를 하나의 delegate에 추가하는 방식으로 사용하고 있다.
+  * 하지만 Combine을 사용하면 더 간단하게 할 수 있다.
+
+```C#
+DelegatePrint combineDelegate = (DelegatePrint)Delegate.Combine(new DelegatePrint[] {PrintValue, PrintHello, PrintValue});
+combineDelegate();
+```
+
