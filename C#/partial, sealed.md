@@ -50,3 +50,11 @@ namespace sealed
 }
 ```
   * 또한 추상클래스, 추상 메서드 또는 속성의 구현을 제공하는 클래스에서 상속해야 하므로 봉인 클래스와 함께 abstract 한정자를 사용하면 오류가 발생
+
+```C#
+sealed abstract class AbstracBase // 오류 발생
+{
+   sealed abstract public void Print(); // 오류 발생
+   sealed public virtual void Print(); // 오류 발생 아래에서 재정의 해야 하므로
+}
+```
